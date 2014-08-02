@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    
+    <string name="story_zombie_apocalypse">Zombie apocalypsa</string>
+    
+    <!-- Characters -->
+    <string name="s1_ch_soldier">Voják</string>
+    <string name="s1_dsc_soldier">Voják je .....</string>
+    
+    <string name="s1_ch_homeless">Bezdomovec</string>
+    <string name="s1_dsc_homeless">Bezdomovec je .....</string>
+    
+    <string name="s1_ch_homeless">Bezdomovec</string>
+    <string name="s1_dsc_homeless">Bezdomovec je .....</string>
+    
+    
+    
+</resources>

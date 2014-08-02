@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<story xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../GameBook/assets/template/story.xsd" name="">
+    <characters>
+        <character position="1" id="1" name="@string/s1_ch_soldier" description="@string/s1_dsc_soldier">
+            <health>25</health>
+            <defense>4</defense>
+            <skill>4</skill>
+            <luck>1</luck>
+        </character>
+        <character position="2" id="2" name="@string/s1_ch_homeless" description="@string/s1_dsc_homeless">
+            <health>35</health>
+            <defense>3</defense>
+            <skill>3</skill>
+            <luck>6</luck>
+        </character>
+        <character position="2" id="2" name="@string/s1_ch_homeless" description="@string/s1_dsc_homeless">
+            <health>35</health>
+            <defense>3</defense>
+            <skill>3</skill>
+            <luck>6</luck>
+        </character>
+    </characters>
+    <sections>
+        <section position="0" text="">
+            <options>
+                <option section="1" text=""></option>
+            </options>
+        </section>
+        <section position="1" text=""></section>
+    </sections>
+</story>
