@@ -71,7 +71,7 @@
        Po cestě narážís na pár mrtvol, ale nic zajímavýho u sebe nemají, akorát pár drobných, který ti jsou stejně na nic.
        Zkoušíš otevřít každé dveře, ale všechny jsou zavřené, tak zkoušíš ťukat a řvát &#8221;Haló je tu někdo? Jste někdo naživu?&#8221;, ale nikdo neodpovídá.
        Jdeš tedy dál a po chvíli docházíš na střechu domu. Přistoupíš k římse a rozhlédneš se. Všude je naprostý bordel, převrácená auta a samé mrtvoly. 
-       Navíc začíná být šero a pomalu nic nevidíš, ale něčeho sis přeci jenom všimnul. Kousek od římsy vedou prkna na druhou budovu přes ulici.
+       Navíc začíná být šero a pomalu nic nevidíš, ale něčeho sis přeci jenom všimnul. Kousek od římsy vedou prkna na druhou budovu.
     </string>
     <string name="story1_section3_option1_text">Přejdeš po pkrnech na druhou budovu.</string>
     
@@ -95,13 +95,13 @@
     <string name="story1_section5_text">
        Slezáš po požárním schodišti, najednou špatně šlápneš na příčku, podklouzne ti noha a ty padáš.
        Dopadl jsi do kontejneru plného odpadků což tvůj pád zbrzdilo, ale při pádu jsi se lehce zranil.
-       Vylezeš z kontejneru, stojíš v uličcce a rozhlížíš se držejíc si bolestivý loket u ruky.
+       Vylezeš z kontejneru, stojíš v uličce a rozhlížíš se držejíc si bolestivý loket u ruky.
     </string>
     <string name="story1_section5_visited_text">
         Stojíš u kontejneru a rozhlížíš se kolem sebe.
     </string>
     <string name="story1_section5_option1_text">Nalevo vidíš v dálce semafory, zřejmě tam bývala nějaká rušná silnice.</string>
-    <string name="story1_section5_option2_text">Napravo vidíš slepou uličku, ale je tam otevřenou budovu, možná by se skrz ní dalo někam prolézt.</string>
+    <string name="story1_section5_option2_text">Napravo vidíš slepou uličku, ale je tam otevřená budova, možná by se skrz ní dalo někam prolézt.</string>
     <string name="story1_section5_option3_text">Všiml sis, že ten ostnatý plot před tebou má nepatrnou díru, kterou bys mohl prolézt.</string>
     
     <!-- section 6 -->
@@ -167,7 +167,7 @@
     <string name="story1_section12_text">
         Zlézáš po požárním schodišti a dáváš si pozor abys špatně nešlápnul, neboť dole už není žádný kontejner, který by tě zachránil.
         Jseš na konci schodišti z zjišťuješ, že ho kus chybí a dolů je to ještě tak dobrý tři metry, ale jelikož jsi vycvičený voják, tak akrobaticky seskočíš dolu.
-        Když dopadneš dolů vidíš na zemi nějakého člověka. Přistoupíš k němu zacloumáš s ním a ptáš se ho,&#8221;Pane jste v pořádku?&#8221;, načež odpoví, &#8221;Cože? Nech mě spát!&#8221;.
+        Když dopadneš dolů vidíš na zemi nějakého člověka. Přistoupíš k němu zacloumáš s ním a ptáš se ho, &#8221;Pane jste v pořádku?&#8221;, načež odpoví, &#8221;Cože? Nech mě spát!&#8221;.
         Prohlížíš si ho a vidíš, že má na sobě potrhaný kabát a vedle sebe tašku s hadrama. 
         Dojde ti, že je to bezdomovec a nic kloudného z něj nedostaneš, tak mu akorát řekneš aby se měl na pozoru a že není moudré v těchto dnech přespávat na ulici.
         Bohužel na schodište zpátky nevyskočíš a k tvé smůle odsud vede jenom jedna cesta a ta nevypadá zrovna moc bezpečně.
