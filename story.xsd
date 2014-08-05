@@ -36,6 +36,7 @@
 			<xs:enumeration value="defense" />
 			<xs:enumeration value="luck" />
 			<xs:enumeration value="skill" />
+			<xs:enumeration value="attack" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="androidString">
@@ -50,12 +51,25 @@
 			<xs:pattern value="@string/([a-zA-Z0-9/_])*"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="androidDrawable">
+		<xs:annotation>
+			<xs:documentation>
+				Text is android string reference and must have format "@string/([a-zA-Z0-9/_])*".
+				<html:p>Example:</html:p>
+				@string/name_of_string_in_android_strings_xml
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="@drawable/([a-zA-Z0-9/_])*"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="characterType">
 		<xs:sequence>
 			<xs:element type="xs:int" name="health" />
 			<xs:element type="xs:int" name="defense" />
 			<xs:element type="xs:int" name="skill" />
 			<xs:element type="xs:int" name="luck" />
+			<xs:element type="xs:int" name="attack" />
 		</xs:sequence>
 		<xs:attribute type="xs:int" name="position" use="required">
 			<xs:annotation>
@@ -119,48 +133,14 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="enemyType">
-		<xs:simpleContent>
-			<xs:extension base="xs:string">
-				<xs:attribute type="xs:int" name="attack" use="required" />
-				<xs:attribute type="xs:int" name="skill" use="required" />
-				<xs:attribute type="androidString" name="name" use="required" />
-				<xs:attribute type="androidString" name="fightWithoutDamageText"
-					use="optional">
-					<xs:annotation>
-						<xs:documentation>Text will shown when character's health is not
-							affected by enemy.</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-				<xs:attribute type="androidString" name="fightWithDamageText"
-					use="optional">
-					<xs:annotation>
-						<xs:documentation>Text will shown when character's health is
-							affected by enemy.</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-				<xs:attribute type="androidString" name="fightSkillText"
-					use="optional">
-					<xs:annotation>
-						<xs:documentation>Text will shown when character's skill is
-							greater then enemy skill.</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-				<xs:attribute type="androidString" name="fightLoseText"
-					use="optional">
-					<xs:annotation>
-						<xs:documentation>Text will shown when character is defeated by
-							enemy.</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-				<xs:attribute type="androidString" name="fightLuckText"
-					use="optional">
-					<xs:annotation>
-						<xs:documentation>Text will shown when character has luck in fight
-							with enemy.</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
+		<xs:sequence>
+			<xs:element type="xs:int" name="health" />
+			<xs:element type="xs:int" name="defense" />
+			<xs:element type="xs:int" name="skill" />
+			<xs:element type="xs:int" name="luck" />
+			<xs:element type="xs:int" name="attack" />
+		</xs:sequence>
+		<xs:attribute type="androidString" name="name" use="required" />
 	</xs:complexType>
 	<xs:complexType name="enemiesType">
 		<xs:sequence>
@@ -264,10 +244,20 @@
 					<xs:documentation>Name of story</xs:documentation>
 				</xs:annotation>
 			</xs:element>
+			<xs:element type="androidDrawable" name="background" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Background of story</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element type="androidString" name="description" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Description of story</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:sequence>
-				<xs:element type="includeType" name="include" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element type="includeType" name="include" minOccurs="0" maxOccurs="unbounded" />
 			</xs:sequence>
-			<xs:element type="charactersType" name="characters"  minOccurs="0"/>
+			<xs:element type="charactersType" name="characters"  minOccurs="0" />
 			<xs:element type="sectionsType" name="sections"  minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
