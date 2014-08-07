@@ -193,7 +193,9 @@
 			<xs:element type="enemiesType" name="enemies" minOccurs="0" />
 			<xs:element type="optionsType" name="options" minOccurs="0" />
 		</xs:sequence>
-		<xs:attribute type="xs:int" name="position" use="required" />
+		<xs:attribute type="xs:boolean" name="position" use="required" >
+			
+		</xs:attribute>
 		<xs:attribute type="androidString" name="alreadyVisitedText" use="optional">
 			<xs:annotation>
 				<xs:documentation>Text will be displayed when player already visited section. Default value is standard text.</xs:documentation>
@@ -221,7 +223,13 @@
 				<xs:documentation>Text will shown when player has luck and avoid combat.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute type="xs:boolean" name="endGame" use="optional">
+		<xs:attribute type="xs:boolean" name="loseSection" use="optional">
+			<xs:annotation>
+				<xs:documentation>Indicates this is end of game (last section).
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute type="xs:boolean" name="winSection" use="optional">
 			<xs:annotation>
 				<xs:documentation>Indicates this is end of game (last section).
 				</xs:documentation>

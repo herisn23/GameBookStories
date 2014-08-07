@@ -3,7 +3,7 @@
     xsi:noNamespaceSchemaLocation="../story.xsd">
     <sections>
         <!-- SECTION 1 -->
-        <section position="1" text="@string/story1_section1_text" alreadyVisitedText="@string/story1_section1_visited_text">
+        <section loseSection="true" position="1" text="@string/story1_section1_text" alreadyVisitedText="@string/story1_section1_visited_text">
             <options>
                 <option section="2" text="@string/story1_section1_option1_text"/>
                 <option section="" text="@string/story1_section1_option2_text"/>
