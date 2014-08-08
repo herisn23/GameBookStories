@@ -218,7 +218,7 @@
 					(this is required when enemies are defined).</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute type="androidString" name="luckText" use="optional">
+		<xs:attribute type="xs:string" name="luckText" use="optional">
 			<xs:annotation>
 				<xs:documentation>Text will shown when player has luck and avoid combat.</xs:documentation>
 			</xs:annotation>
@@ -250,6 +250,11 @@
 			<xs:element type="androidDrawable" name="background" minOccurs="0">
 				<xs:annotation>
 					<xs:documentation>Background of story</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element type="xs:int" name="version" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Version of story</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:sequence>
