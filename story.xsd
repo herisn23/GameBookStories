@@ -37,15 +37,15 @@
 			<xs:enumeration value="luck" />
 			<xs:enumeration value="skill" />
 			<xs:enumeration value="attack" />
-			<xs:enumeration value="baseDamage" />
+			<xs:enumeration value="damage" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="androidDrawable">
 		<xs:annotation>
 			<xs:documentation>
-				Text is android string reference and must have format "@string/([a-zA-Z0-9/_])*".
+				Text is android string reference and must have format "@drawable/([a-zA-Z0-9/_])*".
 				<html:p>Example:</html:p>
-				@string/name_of_string_in_android_strings_xml
+				@drawable/any_image_in_app
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
