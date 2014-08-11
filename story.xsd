@@ -193,9 +193,13 @@
 			<xs:element type="enemiesType" name="enemies" minOccurs="0" />
 			<xs:element type="optionsType" name="options" minOccurs="0" />
 		</xs:sequence>
-		<xs:attribute type="xs:boolean" name="position" use="required" >
-			
-		</xs:attribute>
+		<xs:attribute type="xs:boolean" name="position" use="required" />
+		<xs:attribute type="xs:float" name="scoreMultiplier" use="optional">
+			<xs:annotation>
+				<xs:documentation>This attribute is used only when attribute winSection="true".</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>	
+		
 		<xs:attribute type="androidString" name="alreadyVisitedText" use="optional">
 			<xs:annotation>
 				<xs:documentation>Text will be displayed when player already visited section. Default value is standard text.</xs:documentation>
