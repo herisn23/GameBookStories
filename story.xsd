@@ -37,18 +37,7 @@
 			<xs:enumeration value="luck" />
 			<xs:enumeration value="skill" />
 			<xs:enumeration value="attack" />
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="androidString">
-		<xs:annotation>
-			<xs:documentation>
-				Text is android string reference and must have format "@string/([a-zA-Z0-9/_])*".
-				<html:p>Example:</html:p>
-				@string/name_of_string_in_android_strings_xml
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:pattern value="@string/([a-zA-Z0-9/_])*"/>
+			<xs:enumeration value="baseDamage" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="androidDrawable">
@@ -70,6 +59,7 @@
 			<xs:element type="xs:int" name="skill" />
 			<xs:element type="xs:int" name="luck" />
 			<xs:element type="xs:int" name="attack" />
+			<xs:element type="xs:int" name="baseDamage" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
 		<xs:attribute type="xs:int" name="position" use="required">
 			<xs:annotation>
@@ -78,12 +68,12 @@
 			</xs:annotation>
 		</xs:attribute>
 		<xs:attribute type="xs:int" name="id" use="required" />
-		<xs:attribute type="androidString" name="name" use="required">
+		<xs:attribute type="xs:string" name="name" use="required">
 			<xs:annotation>
 				<xs:documentation>Name of character</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute type="androidString" name="description" use="required">
+		<xs:attribute type="xs:string" name="description" use="required">
 			<xs:annotation>
 				<xs:documentation>Description of character</xs:documentation>
 			</xs:annotation>
@@ -140,7 +130,7 @@
 			<xs:element type="xs:int" name="luck" />
 			<xs:element type="xs:int" name="attack" />
 		</xs:sequence>
-		<xs:attribute type="androidString" name="name" use="required" />
+		<xs:attribute type="xs:string" name="name" use="required" />
 	</xs:complexType>
 	<xs:complexType name="enemiesType">
 		<xs:sequence>
@@ -156,7 +146,7 @@
 						<xs:documentation>Position of next section.</xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
-				<xs:attribute type="androidString" name="text" use="required">
+				<xs:attribute type="xs:string" name="text" use="required">
 					<xs:annotation>
 						<xs:documentation>Text is android string reference and must have format "@string/text".</xs:documentation>
 					</xs:annotation>
@@ -193,19 +183,19 @@
 			<xs:element type="enemiesType" name="enemies" minOccurs="0" />
 			<xs:element type="optionsType" name="options" minOccurs="0" />
 		</xs:sequence>
-		<xs:attribute type="xs:boolean" name="position" use="required" />
+		<xs:attribute type="xs:int" name="position" use="required" />
 		<xs:attribute type="xs:float" name="scoreMultiplier" use="optional">
 			<xs:annotation>
 				<xs:documentation>This attribute is used only when attribute winSection="true".</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>	
 		
-		<xs:attribute type="androidString" name="alreadyVisitedText" use="optional">
+		<xs:attribute type="xs:string" name="alreadyVisitedText" use="optional">
 			<xs:annotation>
 				<xs:documentation>Text will be displayed when player already visited section. Default value is standard text.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute type="androidString" name="text" use="required">
+		<xs:attribute type="xs:string" name="text" use="required">
 			<xs:annotation>
 				<xs:documentation>Part of text of story.</xs:documentation>
 			</xs:annotation>
@@ -215,7 +205,7 @@
 				<xs:documentation>If player has luck, then enemies are defeated.</xs:documentation>
 			</xs:annotation>
 		</xs:attribute>
-		<xs:attribute type="androidString" name="enemiesDefeatedText"
+		<xs:attribute type="xs:string" name="enemiesDefeatedText"
 			use="optional">
 			<xs:annotation>
 				<xs:documentation>Text will shown when player defeated all enemies
