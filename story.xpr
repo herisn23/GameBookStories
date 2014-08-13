@@ -14,12 +14,9 @@
         </options>
     </meta>
     <projectTree name="story.xpr">
-        <file name="zombie_apocalypse.xml"/>
-        <file name="zombie_apocalypse_characters.xml"/>
-        <file name="texts/cs/zombie_apocalypse_doctor.properties"/>
-        <file name="texts/cs/zombie_apocalypse_homeless.properties"/>
-        <file name="texts/cs/zombie_apocalypse_main.properties"/>
-        <file name="texts/cs/zombie_apocalypse_soldier.properties"/>
-        <file name="zombie_apocalypse_soldier.xml"/>
+        <folder path="stories/zombie_apocalypse/texts/"/>
+        <file name="stories/zombie_apocalypse/zombie_apocalypse.xml"/>
+        <file name="stories/zombie_apocalypse/zombie_apocalypse_characters.xml"/>
+        <file name="stories/zombie_apocalypse/zombie_apocalypse_soldier.xml"/>
     </projectTree>
 </project>
