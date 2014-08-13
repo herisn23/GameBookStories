@@ -338,14 +338,14 @@
         <!-- SECTION 10 To Kaltul way 1 (tru road)-->
         <section position="10" text="section10_text" alreadyVisitedText="section10_visited_text">
             <options>
-                <option section="" text="section10_option1_text" />
+                <option section="44" text="section10_option1_text" />
                 <option section="11" text="section10_option2_text" disableWhenSelected="true" luckAspect="true"/>
             </options>
         </section>
         <!-- SECTION 12 To any dangerous way 2-->
         <section position="12" text="section12_text">
             <options>
-                <option section="" text="section12_option1_text" />
+                <option section="42" text="section12_option1_text" />
             </options>
         </section>
         <!-- SECTION 19 To Port-->
@@ -355,38 +355,38 @@
                 <bonus type="attack" value="1" overflowed="true"/>
             </bonuses>
             <options>
-                <option section="" text="section19_option1_text" />
+                <option section="45" text="section19_option1_text" />
             </options>
         </section>
         <!-- SECTION 23 To Kaltul way 2 (tru highway)-->
         <section position="23" text="section23_text">
             <options>
-                <option section="" text="section23_option1_text"/>
+                <option section="43" text="section23_option1_text"/>
             </options>
         </section>
         
         <!-- SECTION 28 To Mirnis-->
         <section position="28" text="section28_text">
             <options>
-                <option section="" text="section28_option1_text" />
+                <option section="46" text="section28_option1_text" />
             </options>
         </section>
         
         <!-- SECTION 29 To Port, or Kaltul (tru road) or Mirnis-->
         <section position="29" text="section29_text">
             <options>
-                <option section="" text="section29_option1_text" />
-                <option section="" text="section29_option2_text" />
-                <option section="" text="section29_option3_text" />
+                <option section="44" text="section29_option1_text" />
+                <option section="46" text="section29_option2_text" />
+                <option section="45" text="section29_option3_text" />
             </options>
         </section>
         
         <!-- SECTION 40 To Port, or Kaltul (tru highway) or Mirnis-->
         <section position="40" text="section40_text">
             <options>
-                <option section="" text="section40_option1_text" />
-                <option section="" text="section40_option2_text" />
-                <option section="" text="section40_option3_text" />
+                <option section="43" text="section40_option1_text" />
+                <option section="46" text="section40_option2_text" />
+                <option section="45" text="section40_option3_text" />
             </options>
         </section>
         

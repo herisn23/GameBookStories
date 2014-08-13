@@ -7,6 +7,10 @@
                 <option section="" text="section41_option1_text"></option>
             </options>
         </section>
-        
+        <section position="42" text="section42_text">
+            <options>
+                <option section="" text="section42_option1_text"></option>
+            </options>
+        </section>
     </sections>
 </story>
