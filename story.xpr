@@ -14,9 +14,7 @@
         </options>
     </meta>
     <projectTree name="story.xpr">
-        <folder path="stories/zombie_apocalypse/texts/"/>
-        <file name="stories/zombie_apocalypse/zombie_apocalypse.xml"/>
-        <file name="stories/zombie_apocalypse/zombie_apocalypse_characters.xml"/>
-        <file name="stories/zombie_apocalypse/zombie_apocalypse_soldier.xml"/>
+        <folder path="stories/"/>
+        <file name="story.xsd"/>
     </projectTree>
 </project>

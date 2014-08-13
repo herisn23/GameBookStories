@@ -122,6 +122,15 @@
 				minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
+	<xs:complexType name="refType">
+		<xs:attribute type="xs:string" name="value" use="required" />
+	</xs:complexType>
+	<xs:complexType name="enemiesRefType">
+		<xs:sequence>
+			<xs:element type="refType" name="ref" maxOccurs="unbounded"
+				minOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
 	<xs:complexType name="enemyType">
 		<xs:sequence>
 			<xs:element type="xs:int" name="health" />
@@ -131,6 +140,7 @@
 			<xs:element type="xs:int" name="attack" />
 		</xs:sequence>
 		<xs:attribute type="xs:string" name="name" use="required" />
+		<xs:attribute type="xs:string" name="id" use="required" />
 	</xs:complexType>
 	<xs:complexType name="enemiesType">
 		<xs:sequence>
@@ -180,7 +190,7 @@
 	<xs:complexType name="sectionType" mixed="true">
 		<xs:sequence>
 			<xs:element type="bonusesType" name="bonuses" minOccurs="0" />
-			<xs:element type="enemiesType" name="enemies" minOccurs="0" />
+			<xs:element type="enemiesRefType" name="enemies" minOccurs="0" />
 			<xs:element type="optionsType" name="options" minOccurs="0" />
 		</xs:sequence>
 		<xs:attribute type="xs:int" name="position" use="required" />
@@ -255,6 +265,7 @@
 				<xs:element type="includeType" name="include" minOccurs="0" maxOccurs="unbounded" />
 			</xs:sequence>
 			<xs:element type="charactersType" name="characters"  minOccurs="0" />
+			<xs:element type="enemiesType" name="enemies"  minOccurs="0" />
 			<xs:element type="sectionsType" name="sections"  minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
