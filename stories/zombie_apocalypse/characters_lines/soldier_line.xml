@@ -302,8 +302,9 @@
                 <bonus type="attack" value="6" overflowed="true" permanent="false"/>
                 <bonus type="skill" value="11" overflowed="true" permanent="false"/>
                 <bonus type="defense" value="4" overflowed="true" permanent="false"/>
-                <bonus type="luck" value="3" overflowed="true" permanent="false"/>
+                <bonus type="luck" value="2" overflowed="true" permanent="false"/>
                 <bonus type="attack" value="1" overflowed="true" state="after_fight" />
+                <bonus type="skill" value="1" overflowed="true" state="after_fight" />
             </bonuses>
             <enemies>
                 <ref value="living_dead"/>
@@ -312,6 +313,7 @@
                 <ref value="living_dead"/>
                 <ref value="living_dead"/>
                 <ref value="zombie"/>
+                <ref value="brain_eater"/>
             </enemies>
             <options>
                 <option section="40" text="section39_option1_text" />

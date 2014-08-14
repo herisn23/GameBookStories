@@ -9,7 +9,7 @@
             <!-- 11% -->
             <skill>4</skill>
             <!-- 8% -->
-            <luck>3</luck>
+            <luck>2</luck>
             <attack>7</attack>
         </character>
         <character position="" id="2" name="ch_doctor" description="dsc_doctor">
@@ -19,7 +19,7 @@
             <!-- 8% -->
             <skill>3</skill>
             <!-- 8% -->
-            <luck>3</luck>
+            <luck>2</luck>
             <attack>5</attack>
         </character>
         <character position="" id="3" name="ch_policeman" description="dsc_policeman">
@@ -29,7 +29,7 @@
             <!-- 31% -->
             <skill>11</skill>
             <!-- 8% -->
-            <luck>3</luck>
+            <luck>2</luck>
             <attack>6</attack>
         </character>
         <character position="" id="4" name="ch_homeless" description="dsc_homeless">
@@ -39,7 +39,7 @@
             <!-- 8% -->
             <skill>3</skill>
             <!-- 51% -->
-            <luck>18</luck>
+            <luck>9</luck>
             <attack>4</attack>
         </character>
     </characters>
