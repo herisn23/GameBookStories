@@ -21,7 +21,7 @@
             </options>
         </section>
         <!-- SECTION 3 -->
-        <section position="3" text="section3_text" winSection="true" scoreMultiplier="2">
+        <section position="3" text="section3_text" scoreMultiplier="2">
             <options>
                 <option section="4" text="section3_option1_text"/>
                 <option section="1" text="section2_option_barracks_text"/>
@@ -86,7 +86,7 @@
             </options>
         </section>
         <!-- SECTION 13 -->
-        <section position="13" text="section13_text" enemiesDefeatedText="section13_enemy_text" luckText="section13_luck_text">
+        <section position="13" text="section13_text" enemiesDefeatedText="section13_enemy_text" luckText="section13_luck_text" alreadyVisitedText="section13_visited_text">
             <enemies>
                 <ref value="undead"/>
                 <ref value="undead"/>
@@ -222,7 +222,7 @@
         <!-- SECTION 31 -->
         <section position="31" text="section31_text">
             <bonuses>
-                <bonus type="health" overflowed="true" value="1" />
+                <bonus type="luck" overflowed="true" value="1" />
             </bonuses>
             <options>
                 <option section="1" text="sg_continue" />
@@ -298,19 +298,12 @@
         <!-- SECTION 39-->
         <section position="39" text="section39_text" enemiesDefeatedText="section39_enemy_text" luckDefeatEnemies="true" luckText="section39_luck_text">
             <bonuses>
-                <bonus type="health" value="30" state="before_fight" overflowed="true"/>
-                <bonus type="attack" value="6" state="before_fight" overflowed="true"/>
-                <bonus type="skill" value="11" state="before_fight" overflowed="true"/>
-                <bonus type="defense" value="4" state="before_fight" overflowed="true"/>
-                <bonus type="luck" value="3" state="before_fight" overflowed="true"/>
-                
-                <bonus type="health" value="30" debuff="true" state="after_fight" overflowed="true"/>
-                <bonus type="attack" value="6" debuff="true" state="after_fight" overflowed="true"/>
-                <bonus type="skill" value="11" debuff="true" state="after_fight" overflowed="true"/>
-                <bonus type="defense" value="4" debuff="true" state="after_fight" overflowed="true"/>
-                <bonus type="luck" value="3" debuff="true" state="after_fight" overflowed="true"/>
-                <bonus type="attack" value="1" state="after_fight" overflowed="true"/>
-                
+                <bonus type="health" value="30" overflowed="true" permanent="false"/>
+                <bonus type="attack" value="6" overflowed="true" permanent="false"/>
+                <bonus type="skill" value="11" overflowed="true" permanent="false"/>
+                <bonus type="defense" value="4" overflowed="true" permanent="false"/>
+                <bonus type="luck" value="3" overflowed="true" permanent="false"/>
+                <bonus type="attack" value="1" overflowed="true" state="after_fight" />
             </bonuses>
             <enemies>
                 <ref value="living_dead"/>

@@ -40,6 +40,13 @@
 			<xs:enumeration value="damage" />
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="enemyLevelType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="boss" />
+			<xs:enumeration value="minion" />
+			<xs:enumeration value="creature" />
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="androidDrawable">
 		<xs:annotation>
 			<xs:documentation>
@@ -92,6 +99,18 @@
 			<xs:extension base="xs:string">
 				<xs:attribute type="attrType" name="type" use="optional" />
 				<xs:attribute type="xs:int" name="value" use="optional" />
+				<xs:attribute type="xs:boolean" name="permanent" use="optional">
+					<xs:annotation>
+						<xs:documentation>
+							Default is TRUE. Non permament bonuses works only when fighting.
+							Before battle will be added and after fight will be removed.
+							When permanent is false, then bonusState is ignored.
+							When stats are removed while bonus is not permanent then stats are not overflow value before bonus application.
+							Ex.: Skill before fight is 5, nonpermanent bonus is 20 but character can have only max 20 skill.
+							After fight skill will be returned to 5.
+						</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
 				<xs:attribute type="xs:boolean" name="debuff" use="optional" >
 					<xs:annotation>
 						<xs:documentation>
@@ -140,6 +159,7 @@
 			<xs:element type="xs:int" name="attack" />
 		</xs:sequence>
 		<xs:attribute type="xs:string" name="name" use="required" />
+		<xs:attribute type="enemyLevelType" name="type" use="optional" />
 		<xs:attribute type="xs:string" name="id" use="required" />
 	</xs:complexType>
 	<xs:complexType name="enemiesType">
