@@ -66,8 +66,16 @@
         </section>
         <section position="56" text="section56_text">
             <options>
-                <option section="" text="section56_option1_text" ></option>
+                <option section="57" text="section56_option1_text" ></option>
                 <option section="" text="section56_option2_text" ></option>
+            </options>
+        </section>
+        <section position="57" text="section57_text">
+            <bonuses>
+                <bonus overflowed="true" type="luck" value="1" />
+            </bonuses>
+            <options>
+                <option section="" text="section57_option1_text" ></option>
             </options>
         </section>
     </sections>
