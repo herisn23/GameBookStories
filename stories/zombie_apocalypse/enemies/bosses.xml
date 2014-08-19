@@ -7,7 +7,7 @@
             <defense>5</defense>
             <skill>5</skill>
             <luck>5</luck>
-            <attack>11</attack>
+            <attack>10</attack>
         </enemy>
     </enemies>
 </story>

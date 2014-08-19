@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <story xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../../story.xsd">
-
+    <sections>
+        <section position="47" text="section47_text" enemiesDefeatedText="section47_enemy_text" luckDefeatEnemies="true" luckText="section47_luck_text">
+            <enemies>
+                <ref value="dead_policeman"/>
+            </enemies>
+            <options>
+                <option section="48" text="section47_option1_text"></option>
+            </options>
+        </section>
+        <section position="48" text="section48_text" enemiesDefeatedText="section48_enemy_text" luckText="section48_luck_text">
+            <enemies>
+                <ref value="dead_policeman"/>
+                <ref value="dead_policeman"/>
+                <ref value="dead_policeman"/>
+            </enemies>
+            <options>
+                <option section="49" text="section48_option1_text"></option>
+            </options>
+        </section> 
+        <section position="49" text="section49_text">
+            <options>
+                <option section="50" text="section49_option1_text"></option>
+                <option section="51" text="section49_option2_text"></option>
+            </options>
+        </section>
+        <section position="50" text="section50_text">
+            <bonuses>
+                <bonus overflowed="true" type="health" value="20" />
+            </bonuses>
+            <options>
+                <option section="52" text="section50_option1_text"></option>
+            </options>
+        </section> 
+        <section position="51" text="section51_text">
+            <bonuses>
+                <bonus overflowed="true" type="attack" value="2" />
+                <bonus overflowed="true" type="skill" value="1" />
+            </bonuses>
+            <options>
+                <option section="53" text="section51_option1_text"></option>
+            </options>
+        </section>
+        <section position="52" text="section52_text">
+            <options>
+                <option section="54" text="section52_option1_text"></option>
+            </options>
+        </section>
+        <section position="53" text="section53_text">
+            <options>
+                <option section="54" text="section53_option1_text"></option>
+            </options>
+        </section>
+        <section position="54" text="section54_text">
+            <options>
+                <option section="55" text="section54_option1_text"></option>
+            </options>
+        </section>
+        <section position="55" text="section55_text">
+            <options>
+                <option section="56" text="section55_option1_text" ></option>
+                <option section="" text="section55_option2_text" skill="11"></option>
+            </options>
+        </section>
+        <section position="56" text="section56_text">
+            <options>
+                <option section="" text="section56_option1_text" ></option>
+                <option section="" text="section56_option2_text" ></option>
+            </options>
+        </section>
+    </sections>
 </story>
