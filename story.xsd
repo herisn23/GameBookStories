@@ -95,45 +95,41 @@
 		<xs:attribute type="xs:string" name="name" use="required" />
 	</xs:complexType>
 	<xs:complexType name="bonusType">
-		<xs:simpleContent>
-			<xs:extension base="xs:string">
-				<xs:attribute type="attrType" name="type" use="optional" />
-				<xs:attribute type="xs:int" name="value" use="optional" />
-				<xs:attribute type="xs:boolean" name="permanent" use="optional">
-					<xs:annotation>
-						<xs:documentation>
-							Default is TRUE. Non permament bonuses works only when fighting.
-							Before battle will be added and after fight will be removed.
-							When permanent is false, then bonusState is ignored.
-							When stats are removed while bonus is not permanent then stats are not overflow value before bonus application.
-							Ex.: Skill before fight is 5, nonpermanent bonus is 20 but character can have only max 20 skill.
-							After fight skill will be returned to 5.
-						</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-				<xs:attribute type="xs:boolean" name="debuff" use="optional" >
-					<xs:annotation>
-						<xs:documentation>
-							This bonus has negative effect.
-						</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-				<xs:attribute type="bonusState" name="state" use="optional" >
-					<xs:annotation>
-						<xs:documentation>
-							Define when bonus will be aplied.
-						</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-				<xs:attribute type="xs:boolean" name="overflowed" use="optional" >
-					<xs:annotation>
-						<xs:documentation>
-							This bonus can overflow character default attribute.
-						</xs:documentation>
-					</xs:annotation>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
+		<xs:attribute type="attrType" name="type" use="optional" />
+		<xs:attribute type="xs:int" name="value" use="optional" />
+		<xs:attribute type="xs:boolean" name="permanent" use="optional">
+			<xs:annotation>
+				<xs:documentation>
+					Default is TRUE. Non permament bonuses works only when fighting.
+					Before battle will be added and after fight will be removed.
+					When permanent is false, then bonusState is ignored.
+					When stats are removed while bonus is not permanent then stats are not overflow value before bonus application.
+					Ex.: Skill before fight is 5, nonpermanent bonus is 20 but character can have only max 20 skill.
+					After fight skill will be returned to 5.
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute type="xs:boolean" name="debuff" use="optional" >
+			<xs:annotation>
+				<xs:documentation>
+					This bonus has negative effect.
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute type="bonusState" name="state" use="optional" >
+			<xs:annotation>
+				<xs:documentation>
+					Define when bonus will be aplied.
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute type="xs:boolean" name="overflowed" use="optional" >
+			<xs:annotation>
+				<xs:documentation>
+					This bonus can overflow character default attribute.
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
 	</xs:complexType>
 	<xs:complexType name="bonusesType">
 		<xs:sequence>
@@ -169,8 +165,6 @@
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="optionType">
-		<xs:simpleContent>
-			<xs:extension base="xs:string">
 				<xs:attribute type="xs:int" name="section" use="required">
 					<xs:annotation>
 						<xs:documentation>Position of next section.</xs:documentation>
@@ -199,8 +193,6 @@
 						<xs:documentation>Required skill of character for display this option. </xs:documentation>
 					</xs:annotation>
 				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="optionsType">
 		<xs:sequence>
