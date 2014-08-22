@@ -47,6 +47,12 @@
 			<xs:enumeration value="creature" />
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="specialAttackType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="defenseCondition" />
+			<xs:enumeration value="healthCondition" />
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="androidDrawable">
 		<xs:annotation>
 			<xs:documentation>
@@ -139,6 +145,7 @@
 	</xs:complexType>
 	<xs:complexType name="refType">
 		<xs:attribute type="xs:string" name="value" use="required" />
+		<xs:attribute type="specialAttackType" name="overrideSkill" use="optional" />
 	</xs:complexType>
 	<xs:complexType name="enemiesRefType">
 		<xs:sequence>
@@ -148,6 +155,7 @@
 	</xs:complexType>
 	<xs:complexType name="enemyType">
 		<xs:sequence>
+			<xs:element type="specialAttackType" name="specialAttack" minOccurs="0"/>
 			<xs:element type="xs:int" name="health" />
 			<xs:element type="xs:int" name="defense" />
 			<xs:element type="xs:int" name="skill" />
