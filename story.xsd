@@ -38,6 +38,7 @@
 			<xs:enumeration value="skill" />
 			<xs:enumeration value="attack" />
 			<xs:enumeration value="damage" />
+			<xs:enumeration value="skillpower" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="enemyLevelType">
@@ -49,8 +50,13 @@
 	</xs:simpleType>
 	<xs:simpleType name="specialAttackType">
 		<xs:restriction base="xs:string">
+			<xs:enumeration value="twiceAttack" />
 			<xs:enumeration value="defenseCondition" />
+			<xs:enumeration value="attackCondition" />
+			<xs:enumeration value="attackBoost" />
 			<xs:enumeration value="healthCondition" />
+			<xs:enumeration value="reflectDamage" />
+			<xs:enumeration value="lethalStrike" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="androidDrawable">
@@ -73,6 +79,7 @@
 			<xs:element type="xs:int" name="luck" />
 			<xs:element type="xs:int" name="attack" />
 			<xs:element type="xs:int" name="baseDamage" minOccurs="0" maxOccurs="1"/>
+			<xs:element type="xs:int" name="skillPower" />
 		</xs:sequence>
 		<xs:attribute type="xs:int" name="position" use="required">
 			<xs:annotation>
@@ -102,6 +109,7 @@
 	</xs:complexType>
 	<xs:complexType name="bonusType">
 		<xs:attribute type="attrType" name="type" use="optional" />
+		<xs:attribute type="xs:boolean" name="base" use="optional" />
 		<xs:attribute type="xs:int" name="value" use="optional" />
 		<xs:attribute type="xs:boolean" name="permanent" use="optional">
 			<xs:annotation>
@@ -156,6 +164,7 @@
 	<xs:complexType name="enemyType">
 		<xs:sequence>
 			<xs:element type="specialAttackType" name="specialAttack" minOccurs="0"/>
+			<xs:element type="xs:int" name="skillPower" minOccurs="0"/>
 			<xs:element type="xs:int" name="health" />
 			<xs:element type="xs:int" name="defense" />
 			<xs:element type="xs:int" name="skill" />
