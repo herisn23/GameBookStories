@@ -71,8 +71,22 @@
 			<xs:pattern value="@drawable/([a-zA-Z0-9/_])*"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:complexType name="skillsType">
+		<xs:sequence>
+			<xs:element type="skillType" name="skill" maxOccurs="unbounded" minOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="skillType">
+		<xs:attribute type="specialAttackType" name="name" use="required"/>
+		<xs:attribute type="xs:int" name="levelRequired" use="required"/>
+	</xs:complexType>
 	<xs:complexType name="characterType">
 		<xs:sequence>
+			<xs:element type="skillsType" name="skills" maxOccurs="unbounded" minOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Section of story</xs:documentation>
+				</xs:annotation>
+			</xs:element>
 			<xs:element type="xs:int" name="health" />
 			<xs:element type="xs:int" name="defense" />
 			<xs:element type="xs:int" name="skill" />
@@ -222,6 +236,7 @@
 			<xs:element type="enemiesRefType" name="enemies" minOccurs="0" />
 			<xs:element type="optionsType" name="options" minOccurs="0" />
 		</xs:sequence>
+		<xs:attribute type="xs:int" name="level" use="optional" />
 		<xs:attribute type="xs:int" name="position" use="required" />
 		<xs:attribute type="xs:float" name="scoreMultiplier" use="optional">
 			<xs:annotation>
