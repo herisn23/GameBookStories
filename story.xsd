@@ -51,12 +51,15 @@
 	<xs:simpleType name="specialAttackType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="twiceAttack" />
-			<xs:enumeration value="defenseCondition" />
-			<xs:enumeration value="attackCondition" />
-			<xs:enumeration value="attackBoost" />
-			<xs:enumeration value="healthCondition" />
+			<xs:enumeration value="crushStrike" />
+			<xs:enumeration value="disarm" />
+			<xs:enumeration value="rage" />
+			<xs:enumeration value="bleeding" />
 			<xs:enumeration value="reflectDamage" />
 			<xs:enumeration value="lethalStrike" />
+			<xs:enumeration value="lifeLeech" />
+			<xs:enumeration value="quickReaction" />
+			<xs:enumeration value="heal" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="androidDrawable">
