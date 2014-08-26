@@ -60,6 +60,7 @@
 			<xs:enumeration value="lifeLeech" />
 			<xs:enumeration value="quickReaction" />
 			<xs:enumeration value="heal" />
+			<xs:enumeration value="greaterHeal" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="androidDrawable">
