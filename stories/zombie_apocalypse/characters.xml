@@ -12,11 +12,11 @@
                 <skill name="lethalStrike" levelRequired="20"/>
             </skills>
             <primaryStat>defense</primaryStat>
-            <health>30</health>
-            <defense>11</defense>
+            <health>35</health>
+            <defense>10</defense>
             <skill>4</skill>
             <luck>2</luck>
-            <attack>7</attack>
+            <attack>5</attack>
             <skillPower>1</skillPower>
         </character>
         <character position="" id="2" name="ch_doctor" description="dsc_doctor">
@@ -29,11 +29,11 @@
                 <skill name="lethalStrike" levelRequired="20"/>
             </skills>
             <primaryStat>skillpower</primaryStat>
-            <health>70</health>
+            <health>50</health>
             <defense>4</defense>
-            <skill>3</skill>
+            <skill>2</skill>
             <luck>2</luck>
-            <attack>5</attack>
+            <attack>4</attack>
             <skillPower>3</skillPower>
         </character>
         <character position="47" id="3" name="ch_policeman" description="dsc_policeman">
@@ -46,11 +46,11 @@
                 <skill name="lethalStrike" levelRequired="20"/>
             </skills>
             <primaryStat>skill</primaryStat>
-            <health>30</health>
+            <health>40</health>
             <defense>4</defense>
             <skill>10</skill>
             <luck>2</luck>
-            <attack>6</attack>
+            <attack>5</attack>
             <skillPower>1</skillPower>
         </character>
         <character position="" id="4" name="ch_homeless" description="dsc_homeless">
@@ -62,8 +62,8 @@
                 <skill name="disarm" levelRequired="15"/>
                 <skill name="lethalStrike" levelRequired="20"/>
             </skills>
-            <primaryStat>attack</primaryStat>
-            <health>25</health>
+            <primaryStat>luck</primaryStat>
+            <health>30</health>
             <defense>2</defense>
             <skill>3</skill>
             <luck>10</luck>

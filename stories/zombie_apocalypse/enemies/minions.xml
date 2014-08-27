@@ -3,6 +3,7 @@
     xsi:noNamespaceSchemaLocation="../../../story.xsd">
     <enemies>
        <enemy name="e_rotten_merchant" id="rotten_merchant" type="minion">
+           <specialAttack>rage</specialAttack>
            <health>20</health>
            <defense>3</defense>
            <skill>2</skill>

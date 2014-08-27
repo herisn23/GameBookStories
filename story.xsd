@@ -242,7 +242,9 @@
 			<xs:element type="optionsType" name="options" minOccurs="0" />
 		</xs:sequence>
 		<xs:attribute type="xs:int" name="level" use="optional" />
-		<xs:attribute type="xs:boolean" name="resetOverflowedStats" use="optional" />
+		<xs:attribute type="xs:boolean" name="resetAttributes" use="optional" />
+		<xs:attribute type="xs:boolean" name="resetPositiveAttributes" use="optional" />
+		<xs:attribute type="xs:boolean" name="resetNegativeAttributes" use="optional" />
 		<xs:attribute type="xs:int" name="position" use="required" />
 		<xs:attribute type="xs:float" name="scoreMultiplier" use="optional">
 			<xs:annotation>

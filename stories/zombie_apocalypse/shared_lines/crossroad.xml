@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<story xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../story.xsd">
+    <sections>
+        <!-- SECTION 40 to Port or Kaltul or Mirnis-->
+        <section position="40" text="section40_text" resetNegativeAttributes="true">
+            <options>
+                <option section="44" text="section40_option1_text"/>
+                <option section="46" text="section40_option2_text"/>
+                <option section="45" text="section40_option3_text"/>
+            </options>
+        </section>
+    </sections>
+</story>

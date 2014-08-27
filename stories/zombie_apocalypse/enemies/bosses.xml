@@ -9,7 +9,7 @@
             <defense>5</defense>
             <skill>5</skill>
             <luck>5</luck>
-            <attack>10</attack>
+            <attack>6</attack>
         </enemy>
     </enemies>
 </story>
