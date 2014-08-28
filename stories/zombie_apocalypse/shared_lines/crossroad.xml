@@ -3,7 +3,7 @@
     xsi:noNamespaceSchemaLocation="../../../story.xsd">
     <sections>
         <!-- SECTION 40 to Port or Kaltul or Mirnis-->
-        <section position="40" text="section40_text" resetNegativeAttributes="true">
+        <section position="40" text="section40_text" resetNegativeAttributes="true" xpcoeff="0.3">
             <options>
                 <option section="44" text="section40_option1_text"/>
                 <option section="46" text="section40_option2_text"/>
