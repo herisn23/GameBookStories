@@ -11,6 +11,7 @@
                 <skill name="lifeLeech" levelRequired="15"/>
                 <skill name="lethalStrike" levelRequired="20"/>
             </skills>
+            
             <primaryStat>defense</primaryStat>
             <health>35</health>
             <defense>10</defense>

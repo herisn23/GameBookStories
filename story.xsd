@@ -2,8 +2,29 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	attributeFormDefault="unqualified" elementFormDefault="qualified"
 	xmlns:html="http://www.w3.org/1999/xhtml"
-    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
-	<xs:element name="story" type="storyType" />
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1"  >
+	<xs:element name="story">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="androidDrawable" name="background" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Background of story</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element type="xs:int" name="version" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Version of story</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:sequence>
+					<xs:element type="includeType" name="include" minOccurs="0" maxOccurs="unbounded" />
+				</xs:sequence>
+				<xs:element type="charactersType" name="characters"  minOccurs="0" />
+				<xs:element type="enemiesType" name="enemies"  minOccurs="0" />
+				<xs:element type="sectionsType" name="sections"  minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 	<xs:simpleType name="bonusState">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="before_fight">
@@ -86,7 +107,7 @@
 	</xs:complexType>
 	<xs:complexType name="characterType">
 		<xs:sequence>
-			<xs:element type="skillsType" name="skills" maxOccurs="unbounded" minOccurs="1">
+			<xs:element type="skillsType" name="skills" maxOccurs="1" minOccurs="1">
 				<xs:annotation>
 					<xs:documentation>Section of story</xs:documentation>
 				</xs:annotation>
@@ -237,7 +258,7 @@
 			<xs:element type="optionType" name="option" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="sectionType" mixed="true">
+	<xs:complexType name="sectionType" mixed="false">
 		<xs:sequence>
 			<xs:element type="bonusesType" name="bonuses" minOccurs="0" />
 			<xs:element type="enemiesRefType" name="enemies" minOccurs="0" />
@@ -304,25 +325,6 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="storyType">
-		<xs:sequence>
-			<xs:element type="androidDrawable" name="background" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Background of story</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element type="xs:int" name="version" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Version of story</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:sequence>
-				<xs:element type="includeType" name="include" minOccurs="0" maxOccurs="unbounded" />
-			</xs:sequence>
-			<xs:element type="charactersType" name="characters"  minOccurs="0" />
-			<xs:element type="enemiesType" name="enemies"  minOccurs="0" />
-			<xs:element type="sectionsType" name="sections"  minOccurs="0" />
-		</xs:sequence>
-	</xs:complexType>
+	
 	
 </xs:schema>
