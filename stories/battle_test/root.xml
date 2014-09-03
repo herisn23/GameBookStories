@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
+    <version>1</version>
+    <include name="enemies.xml"/>
+    <include name="player.xml"/>
+    <include name="test_way.xml"/>
+</story>
