@@ -22,6 +22,7 @@
 				<xs:element type="charactersType" name="characters"  minOccurs="0" />
 				<xs:element type="enemiesType" name="enemies"  minOccurs="0" />
 				<xs:element type="sectionsType" name="sections"  minOccurs="0" />
+				<xs:element type="skills" name="skills"  minOccurs="0" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
@@ -62,6 +63,13 @@
 			<xs:enumeration value="skillpower" />
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="skillBasedType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ATTACK" />
+			<xs:enumeration value="SKILL_POWER" />
+			<xs:enumeration value="SKILL" />
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="enemyLevelType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="boss" />
@@ -69,27 +77,14 @@
 			<xs:enumeration value="creature" />
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="specialAttackType">
+	<xs:simpleType name="proprietarySkill">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="decrease_health_greater" />
-			<xs:enumeration value="decrease_health_greater_overtime" />
-			<xs:enumeration value="increase_attack" />
-			<xs:enumeration value="life_leech" />
-			<xs:enumeration value="increase_skill" />
-			<xs:enumeration value="increase_health_greater_overtime" />
-			<xs:enumeration value="increase_health" />
-			<xs:enumeration value="cancel_positive" />
-			<xs:enumeration value="increase_health_greater" />
 			<xs:enumeration value="twice_attack" />
-			<xs:enumeration value="quick_reaction" />
-			<xs:enumeration value="decrease_health" />
-			<xs:enumeration value="increase_defense" />
-			<xs:enumeration value="decrease_skill" />
-			<xs:enumeration value="increase_health_overtime" />
-			<xs:enumeration value="decrease_attack" />
-			<xs:enumeration value="decrease_health_overtime" />
 			<xs:enumeration value="reflect_damage" />
-			<xs:enumeration value="decrease_defense" />
+			<xs:enumeration value="life_leech" />
+			<xs:enumeration value="quick_reaction" />
+			<xs:enumeration value="cancel_positive" />
+			<xs:enumeration value="cancel_negative" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="androidDrawable">
@@ -104,22 +99,32 @@
 			<xs:pattern value="@drawable/([a-zA-Z0-9/_])*"/>
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:complexType name="skillsType">
+	<xs:complexType name="skills">
 		<xs:sequence>
-			<xs:element type="skillType" name="skill" maxOccurs="unbounded" minOccurs="1"/>
+			<xs:element type="skill" name="specialSkill" maxOccurs="unbounded" minOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="skillType">
-		<xs:attribute type="specialAttackType" name="name" use="required"/>
+	<xs:complexType name="skill">
+		<xs:attribute type="xs:string" name="id" use="required"/>
+		<xs:attribute type="xs:string" name="skillName" use="required"/>
+		<xs:attribute type="xs:int" name="attempts" use="optional"/>
+		<xs:attribute type="xs:int" name="turns" use="optional"/>
 		<xs:attribute type="xs:int" name="levelRequired" use="required"/>
+		<xs:attribute type="xs:float" name="coeff" use="optional"/>
+		<xs:attribute type="xs:boolean" name="increase" use="optional"/>
+		<xs:attribute type="xs:boolean" name="resetAtBattleEnd" use="optional"/>
+		
+		<xs:attribute type="xs:boolean" name="beforeEnemySkill" use="optional"/>
+		<xs:attribute type="xs:boolean" name="beforeEnemyAttack" use="optional"/>
+		<xs:attribute type="xs:boolean" name="afterEnemyAttack" use="optional"/>
+		<xs:attribute type="xs:boolean" name="afterNormalAttack" use="optional"/>	
+		<xs:attribute type="xs:boolean" name="permanent" use="optional"/>
+		<xs:attribute type="attrType" name="type" use="optional"/>
+		<xs:attribute type="proprietarySkill" name="proprietarySkill" use="optional"/>
 	</xs:complexType>
 	<xs:complexType name="characterType">
 		<xs:sequence>
-			<xs:element type="skillsType" name="skills" maxOccurs="1" minOccurs="1">
-				<xs:annotation>
-					<xs:documentation>Section of story</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+			<xs:element type="skillsRefType" name="skills" maxOccurs="1" minOccurs="1" />
 			<xs:element type="attrType" name="primaryStat" />
 			<xs:element type="xs:int" name="health" />
 			<xs:element type="xs:int" name="defense" />
@@ -129,6 +134,7 @@
 			<xs:element type="xs:int" name="baseDamage" minOccurs="0" maxOccurs="1"/>
 			<xs:element type="xs:int" name="skillPower" />
 		</xs:sequence>
+		<xs:attribute type="skillBasedType" name="skillBased" use="required" />
 		<xs:attribute type="xs:int" name="position" use="required">
 			<xs:annotation>
 				<xs:documentation>Start section position of character
@@ -199,31 +205,42 @@
 				minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="refType">
+	
+	
+	
+	<xs:complexType name="enemyReference">
 		<xs:attribute type="xs:string" name="value" use="required" />
-		<xs:attribute type="specialAttackType" name="overrideSkill" use="optional" />
 		<xs:attribute type="xs:float" name="xpcoeff" use="optional" />
+	</xs:complexType>
+	<xs:complexType name="skillReference">
+		<xs:attribute type="xs:string" name="value" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="skillsRefType">
+		<xs:sequence>
+			<xs:element type="skillReference" name="ref" maxOccurs="unbounded" minOccurs="1" />
+		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="enemiesRefType">
 		<xs:sequence>
-			<xs:element type="refType" name="ref" maxOccurs="unbounded"
-				minOccurs="1" />
+			<xs:element type="enemyReference" name="ref" maxOccurs="unbounded" minOccurs="1" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="enemyType">
+	<xs:complexType name="skillType"  mixed="false">
+		
+	</xs:complexType>	
+	<xs:complexType name="enemyType"  mixed="false">
 		<xs:sequence>
-			<xs:element type="skillsType" name="skills" maxOccurs="1" minOccurs="0">
-				<xs:annotation>
-					<xs:documentation>Section of story</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+			<xs:element type="skillsRefType" name="skills" maxOccurs="1" minOccurs="0" />
 			<xs:element type="xs:int" name="skillPower" minOccurs="0"/>
 			<xs:element type="xs:int" name="health" />
 			<xs:element type="xs:int" name="defense" />
 			<xs:element type="xs:int" name="skill" />
 			<xs:element type="xs:int" name="luck" />
 			<xs:element type="xs:int" name="attack" />
+			<xs:element type="xs:int" name="baseDamage" minOccurs="0"/>
 		</xs:sequence>
+		<xs:attribute type="skillBasedType" name="skillBased" use="required" />
 		<xs:attribute type="xs:string" name="name" use="required" />
 		<xs:attribute type="xs:float" name="xpcoeff" use="optional" />
 		<xs:attribute type="enemyLevelType" name="type" use="optional" />
@@ -231,8 +248,7 @@
 	</xs:complexType>
 	<xs:complexType name="enemiesType">
 		<xs:sequence>
-			<xs:element type="enemyType" name="enemy" maxOccurs="unbounded"
-				minOccurs="0" />
+			<xs:element type="enemyType" name="enemy" maxOccurs="unbounded" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="optionType">

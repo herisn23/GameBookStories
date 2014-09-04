@@ -1,0 +1,21 @@
+@@ -1,20 +0,0 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="16.0">
+    <meta>
+        <filters directoryPatterns="" filePatterns="" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options>
+            <serialized version="16.0" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>validation.scenarios</String>
+                        <validationScenario-array/>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
+    </meta>
+    <projectTree name="story.xpr">
+        <folder path="stories/"/>
+        <file name="story.xsd"/>
+    </projectTree>
+</project>

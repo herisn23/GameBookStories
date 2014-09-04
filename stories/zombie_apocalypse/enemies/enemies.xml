@@ -2,49 +2,49 @@
 <story xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../../story.xsd">
     <enemies>
-        <enemy name="e_livingdead" id="living_dead">
+        <enemy name="e_livingdead" id="living_dead" skillBased="ATTACK">
             <health>5</health>
             <defense>2</defense>
             <skill>2</skill>
             <luck>1</luck>
             <attack>2</attack>
         </enemy>
-        <enemy name="e_nohander" id="nohander">
+        <enemy name="e_nohander" id="nohander"  skillBased="ATTACK">
             <health>4</health>
             <defense>3</defense>
             <skill>1</skill>
             <luck>1</luck>
             <attack>3</attack>
         </enemy>
-        <enemy name="e_undead" id="undead">
+        <enemy name="e_undead" id="undead" skillBased="ATTACK">
             <health>5</health>
             <defense>2</defense>
             <skill>2</skill>
             <luck>2</luck>
             <attack>5</attack>
         </enemy>
-        <enemy name="e_infected_cat" id="infected_cat">
+        <enemy name="e_infected_cat" id="infected_cat" skillBased="ATTACK">
             <health>9</health>
             <defense>2</defense>
             <skill>1</skill>
             <luck>1</luck>
             <attack>5</attack>
         </enemy>
-        <enemy name="e_zombie" id="zombie">
+        <enemy name="e_zombie" id="zombie" skillBased="ATTACK">
             <health>10</health>
             <defense>5</defense>
             <skill>1</skill>
             <luck>1</luck>
             <attack>3</attack>
         </enemy>
-        <enemy name="e_rotten_corpse" id="rotten_corpse">
+        <enemy name="e_rotten_corpse" id="rotten_corpse" skillBased="ATTACK">
             <health>6</health>
             <defense>0</defense>
             <skill>1</skill>
             <luck>2</luck>
             <attack>3</attack>
         </enemy>
-        <enemy name="e_dead_policeman" id="dead_policeman">
+        <enemy name="e_dead_policeman" id="dead_policeman" skillBased="ATTACK">
             <health>5</health>
             <defense>1</defense>
             <skill>1</skill>

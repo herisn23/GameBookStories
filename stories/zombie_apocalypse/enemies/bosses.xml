@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <story xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../../story.xsd">
+    
     <enemies>
-        <enemy name="e_brain_eater" id="brain_eater" type="boss">
-            <specialAttack>reflectDamage</specialAttack>
+        <enemy name="e_brain_eater" id="brain_eater" type="boss" skillBased="ATTACK">
             <skillPower>1</skillPower>
             <health>40</health>
             <defense>5</defense>

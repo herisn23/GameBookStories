@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<story>
+<story xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../story.xsd">
     <characters>
-        <character position="0" id="1" name="clerik" description="clerik_desc">
+        <character position="1" id="1" name="clerik" description="clerik_desc" skillBased="SKILL_POWER">
             <skills>
-                <skill name="increase_health_greater_overtime" levelRequired="0"/>
-                <skill name="increase_health" levelRequired="0"/>
-                <skill name="increase_health_greater" levelRequired="0"/>
-                <skill name="increase_health_overtime" levelRequired="0"/>
+                <ref value="heal"/>
+                <ref value="greater_heal"/>
+                <ref value="heal_overtime"/>
+                <ref value="heal_and_heal_overtime"/>
+                
+                <ref value="crush_strike"/>
+                <ref value="rage"/>
+                <ref value="disarm"/>
+                <ref value="posion_dagger"/>
             </skills>
             <primaryStat>skillpower</primaryStat>
             <health>50</health>

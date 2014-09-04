@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<story/>
+<story xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../../story.xsd">
+    <enemies>
+        <enemy skillBased="ATTACK" name="test_enemy" id="test_enemy">
+            <skills>
+                <ref value=""/>
+            </skills>
+            <skillPower>2</skillPower>
+            <health>50</health>
+            <defense>5</defense>
+            <skill>5</skill>
+            <luck>5</luck>
+            <attack>5</attack>
+        </enemy>
+    </enemies>
+</story>

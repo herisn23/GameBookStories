@@ -6,4 +6,5 @@
     <include name="enemies/minions.xml"/>
     <include name="sections/low_level/first_level.xml"/>
     <include name="characters.xml"/>
+    <include name="skills.xml"/>
 </story>

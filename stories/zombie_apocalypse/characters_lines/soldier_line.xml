@@ -359,12 +359,12 @@
                 <bonus type="skillpower" value="1" base="true" state="after_fight"/>
             </bonuses>
             <enemies>
-                <ref value="living_dead" overrideSkill="bleeding"/>
-                <ref value="nohander" overrideSkill="bleeding"/>
-                <ref value="rotten_corpse" overrideSkill="bleeding"/>
-                <ref value="living_dead" overrideSkill="bleeding"/>
-                <ref value="living_dead" overrideSkill="bleeding"/>
-                <ref value="zombie" overrideSkill="bleeding"/>
+                <ref value="living_dead"/>
+                <ref value="nohander"/>
+                <ref value="rotten_corpse"/>
+                <ref value="living_dead"/>
+                <ref value="living_dead"/>
+                <ref value="zombie"/>
                 <ref value="brain_eater"/>
             </enemies>
             <options>
@@ -386,12 +386,12 @@
                 <bonus type="skill" value="2" base="true" state="after_fight"/>
             </bonuses>
             <enemies>
-                <ref value="living_dead" overrideSkill="bleeding"/>
-                <ref value="nohander" overrideSkill="bleeding"/>
-                <ref value="rotten_corpse" overrideSkill="bleeding"/>
-                <ref value="living_dead" overrideSkill="bleeding"/>
-                <ref value="living_dead" overrideSkill="bleeding"/>
-                <ref value="zombie" overrideSkill="bleeding"/>
+                <ref value="living_dead"/>
+                <ref value="nohander"/>
+                <ref value="rotten_corpse"/>
+                <ref value="living_dead"/>
+                <ref value="living_dead"/>
+                <ref value="zombie"/>
                 <ref value="brain_eater"/>
             </enemies>
             <options>
@@ -413,12 +413,12 @@
                 <bonus type="luck" value="5" base="true" state="after_fight"/>
             </bonuses>
             <enemies>
-                <ref value="living_dead" overrideSkill="bleeding"/>
-                <ref value="nohander" overrideSkill="bleeding"/>
-                <ref value="rotten_corpse" overrideSkill="bleeding"/>
-                <ref value="living_dead" overrideSkill="bleeding"/>
-                <ref value="living_dead" overrideSkill="bleeding"/>
-                <ref value="zombie" overrideSkill="bleeding"/>
+                <ref value="living_dead"/>
+                <ref value="nohander"/>
+                <ref value="rotten_corpse"/>
+                <ref value="living_dead"/>
+                <ref value="living_dead"/>
+                <ref value="zombie"/>
                 <ref value="brain_eater"/>
             </enemies>
             <options>
