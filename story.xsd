@@ -71,17 +71,25 @@
 	</xs:simpleType>
 	<xs:simpleType name="specialAttackType">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="twiceAttack" />
-			<xs:enumeration value="crushStrike" />
-			<xs:enumeration value="disarm" />
-			<xs:enumeration value="rage" />
-			<xs:enumeration value="bleeding" />
-			<xs:enumeration value="reflectDamage" />
-			<xs:enumeration value="lethalStrike" />
-			<xs:enumeration value="lifeLeech" />
-			<xs:enumeration value="quickReaction" />
-			<xs:enumeration value="heal" />
-			<xs:enumeration value="greaterHeal" />
+			<xs:enumeration value="decrease_health_greater" />
+			<xs:enumeration value="decrease_health_greater_overtime" />
+			<xs:enumeration value="increase_attack" />
+			<xs:enumeration value="life_leech" />
+			<xs:enumeration value="increase_skill" />
+			<xs:enumeration value="increase_health_greater_overtime" />
+			<xs:enumeration value="increase_health" />
+			<xs:enumeration value="cancel_positive" />
+			<xs:enumeration value="increase_health_greater" />
+			<xs:enumeration value="twice_attack" />
+			<xs:enumeration value="quick_reaction" />
+			<xs:enumeration value="decrease_health" />
+			<xs:enumeration value="increase_defense" />
+			<xs:enumeration value="decrease_skill" />
+			<xs:enumeration value="increase_health_overtime" />
+			<xs:enumeration value="decrease_attack" />
+			<xs:enumeration value="decrease_health_overtime" />
+			<xs:enumeration value="reflect_damage" />
+			<xs:enumeration value="decrease_defense" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="androidDrawable">
