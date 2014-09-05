@@ -63,13 +63,6 @@
 			<xs:enumeration value="skillpower" />
 		</xs:restriction>
 	</xs:simpleType>
-	<xs:simpleType name="skillBasedType">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="ATTACK" />
-			<xs:enumeration value="SKILL_POWER" />
-			<xs:enumeration value="SKILL" />
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:simpleType name="enemyLevelType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="boss" />
@@ -113,7 +106,6 @@
 		<xs:attribute type="xs:float" name="coeff" use="optional"/>
 		<xs:attribute type="xs:boolean" name="increase" use="optional"/>
 		<xs:attribute type="xs:boolean" name="resetAtBattleEnd" use="optional"/>
-		
 		<xs:attribute type="xs:boolean" name="beforeEnemySkill" use="optional"/>
 		<xs:attribute type="xs:boolean" name="beforeEnemyAttack" use="optional"/>
 		<xs:attribute type="xs:boolean" name="afterEnemyAttack" use="optional"/>
@@ -134,7 +126,6 @@
 			<xs:element type="xs:int" name="baseDamage" minOccurs="0" maxOccurs="1"/>
 			<xs:element type="xs:int" name="skillPower" />
 		</xs:sequence>
-		<xs:attribute type="skillBasedType" name="skillBased" use="required" />
 		<xs:attribute type="xs:int" name="position" use="required">
 			<xs:annotation>
 				<xs:documentation>Start section position of character
@@ -240,7 +231,6 @@
 			<xs:element type="xs:int" name="attack" />
 			<xs:element type="xs:int" name="baseDamage" minOccurs="0"/>
 		</xs:sequence>
-		<xs:attribute type="skillBasedType" name="skillBased" use="required" />
 		<xs:attribute type="xs:string" name="name" use="required" />
 		<xs:attribute type="xs:float" name="xpcoeff" use="optional" />
 		<xs:attribute type="enemyLevelType" name="type" use="optional" />

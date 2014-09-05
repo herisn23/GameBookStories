@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
+    <version>1</version>
+    <include name="enemies/bosses.xml"/>
+    <include name="enemies/creatures.xml"/>
+    <include name="enemies/minions.xml"/>
+    <include name="sections/low_level/first_level.xml"/>
+    <include name="characters.xml"/>
+    <include name="skills.xml"/>
+</story>

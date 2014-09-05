@@ -2,13 +2,13 @@
 <story xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../../../story.xsd">
     <enemies>
-        <enemy name="test_enemy" id="test_enemy">
+        <enemy skillBased="ATTACK" name="test_enemy" id="test_enemy">
             <skills>
                 <ref value=""/>
             </skills>
             <skillPower>2</skillPower>
             <health>50</health>
-            <defense>5</defense>
+            <defense>25</defense>
             <skill>5</skill>
             <luck>5</luck>
             <attack>5</attack>

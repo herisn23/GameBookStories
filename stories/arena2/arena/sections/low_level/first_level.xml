@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<story xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../../../story.xsd">
+    <sections>
+        <section position="1" text="test" enemiesDefeatedText="test">
+            <enemies>
+                <ref value="test_enemy" xpcoeff="60" />
+            </enemies>
+            <options>
+                <option section="2" text="cnt"/>
+            </options>
+        </section>
+        <section position="2" text="test" enemiesDefeatedText="test">
+            <enemies>
+                <ref value="test_enemy" xpcoeff="60" />
+            </enemies>
+        </section>
+    </sections>
+</story>

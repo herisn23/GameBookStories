@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<story xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../story.xsd">
+    <skills>
+        <specialSkill 
+            id="heal_overtime_and_cancel" 
+            proprietarySkill="quick_reaction" 
+            permanent="true" 
+            skillName="heal_overtime" 
+            turns="5" 
+            levelRequired="1"  
+            attempts="1" 
+            increase="true" />
+          <specialSkill id="reflect" coeff="0.5" skillName="reflect" levelRequired="1" proprietarySkill="reflect_damage"/>
+        <specialSkill id="quick" skillName="quick" levelRequired="1" proprietarySkill="life_leech"/>
+        <specialSkill id="life" skillName="life" levelRequired="1" proprietarySkill="quick_reaction"/>
+        
+<!--         <specialSkill id="heal" permanent="true" skillName="heal" levelRequired="1" type="health" increase="true" attempts="1" /> -->
+<!--         <specialSkill id="greater_heal" permanent="true" skillName="greater_heal" levelRequired="2" type="health"  attempts="1" increase="true" coeff="0.8" /> -->
+        <specialSkill id="heal_and_heal_overtime" permanent="true" skillName="heal_and_heal_overtime" turns="6"  attempts="1" levelRequired="1" type="health" increase="true" />
+        
+<!--         <specialSkill id="crush_strike" skillName="crush_strike" levelRequired="1" type="defense"  attempts="2" increase="false" /> -->
+<!--         <specialSkill id="rage" skillName="rage" levelRequired="2" type="attack"  attempts="1" increase="true" /> -->
+<!--         <specialSkill id="disarm" beforeEnemyAttack="true" beforeEnemySkill="true" skillName="disarm" levelRequired="1"  attempts="1" type="attack" increase="false" resetAtBattleEnd="true"/> -->
+        <specialSkill id="posion_dagger" skillName="posion_dagger" turns="1"  attempts="1" levelRequired="1" type="attack" increase="false"/>
+        
+    </skills>
+</story>
