@@ -76,8 +76,12 @@
 			<xs:enumeration value="reflect_damage" />
 			<xs:enumeration value="life_leech" />
 			<xs:enumeration value="quick_reaction" />
-			<xs:enumeration value="cancel_positive" />
-			<xs:enumeration value="cancel_negative" />
+			<xs:enumeration value="cancel_hot" />
+			<xs:enumeration value="cancel_dot" />
+			<xs:enumeration value="cancel_buff" />
+			<xs:enumeration value="cancel_debuff" />
+			<xs:enumeration value="kick" />
+			<xs:enumeration value="stun" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="androidDrawable">
@@ -105,8 +109,9 @@
 		<xs:attribute type="xs:int" name="levelRequired" use="required"/>
 		<xs:attribute type="xs:float" name="coeff" use="optional"/>
 		<xs:attribute type="xs:boolean" name="increase" use="optional"/>
-		<xs:attribute type="xs:boolean" name="resetAtBattleEnd" use="optional"/>
+		<xs:attribute type="xs:boolean" name="condition" use="optional"/>
 		<xs:attribute type="xs:boolean" name="beforeEnemySkill" use="optional"/>
+		<xs:attribute type="xs:boolean" name="onEndOfRound" use="optional"/>
 		<xs:attribute type="xs:boolean" name="beforeEnemyAttack" use="optional"/>
 		<xs:attribute type="xs:boolean" name="afterEnemyAttack" use="optional"/>
 		<xs:attribute type="xs:boolean" name="afterNormalAttack" use="optional"/>	
@@ -217,9 +222,6 @@
 			<xs:element type="enemyReference" name="ref" maxOccurs="unbounded" minOccurs="1" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="skillType"  mixed="false">
-		
-	</xs:complexType>	
 	<xs:complexType name="enemyType"  mixed="false">
 		<xs:sequence>
 			<xs:element type="skillsRefType" name="skills" maxOccurs="1" minOccurs="0" />

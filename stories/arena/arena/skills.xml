@@ -1,19 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<story xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../../story.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
     <skills>
-        <specialSkill id="heal" permanent="true" skillName="heal" levelRequired="1" type="health" increase="true" attempts="1" />
-        <specialSkill id="greater_heal" permanent="true" skillName="greater_heal" levelRequired="2" type="health"  attempts="1" increase="true" coeff="0.8" />
-        <specialSkill id="heal_overtime_and_cancel" proprietarySkill="quick_reaction" permanent="true" skillName="heal_overtime" turns="5" levelRequired="1"  attempts="1" increase="true" />
-        <specialSkill id="heal_and_heal_overtime" permanent="true" skillName="heal_and_heal_overtime" turns="5"  attempts="1" levelRequired="5" type="health" increase="true" />
-        
-        <specialSkill id="crush_strike" skillName="crush_strike" levelRequired="1" type="defense"  attempts="2" increase="false" />
-        <specialSkill id="rage" skillName="rage" levelRequired="2" type="attack"  attempts="1" increase="true" />
-        <specialSkill id="disarm" beforeEnemyAttack="true" beforeEnemySkill="true" skillName="disarm" levelRequired="1"  attempts="1" type="attack" increase="false" resetAtBattleEnd="true"/>
-        <specialSkill id="posion_dagger" skillName="posion_dagger" turns="5"  attempts="1" levelRequired="5" type="attack" increase="false" coeff="0.5"/>
-        <specialSkill id="reflect" skillName="reflect" levelRequired="1" proprietarySkill="reflect_damage"/>
-        <specialSkill id="quick" skillName="quick" levelRequired="1" proprietarySkill="life_leech"/>
-        <specialSkill id="life" skillName="life" levelRequired="1" proprietarySkill="quick_reaction"/>
-        
+        <specialSkill id="skill_id_0" skillName="heal" attempts="1" levelRequired="1" increase="true" permanent="true" type="health"/>
+        <specialSkill id="skill_id_1" skillName="buff" attempts="1" turns="5" levelRequired="1" increase="true" condition="true" type="attack"/>
+        <specialSkill id="skill_id_2" skillName="debuff" attempts="1" turns="5" levelRequired="1" condition="true" type="attack"/>
+        <specialSkill id="skill_id_3" skillName="hot" attempts="1" turns="5" levelRequired="1" increase="true"/>
+        <specialSkill id="skill_id_4" skillName="dot" attempts="1" turns="5" levelRequired="1"/>
+        <specialSkill id="skill_id_5" skillName="cancel_buff" attempts="1" levelRequired="1" proprietarySkill="cancel_buff"/>
+        <specialSkill id="skill_id_6" skillName="cancel_hot" attempts="1" levelRequired="1" proprietarySkill="cancel_hot"/>
+        <specialSkill id="skill_id_7" skillName="cancel_dot" attempts="1" levelRequired="1" proprietarySkill="cancel_dot"/>
+        <specialSkill id="skill_id_8" skillName="cance_debuff" attempts="1" levelRequired="1" proprietarySkill="cancel_debuff"/>
     </skills>
 </story>

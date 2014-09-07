@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<story xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../../../story.xsd">
+<story>
     <enemies>
-        <enemy name="test_enemy" id="test_enemy">
+        <enemy name="test_enemy" xpcoeff="6.0" type="boss" id="test_enemy">
             <skills>
-                <ref value=""/>
+                <ref value="skill_id_0"/>
+                <ref value="skill_id_1"/>
+                <ref value="skill_id_2"/>
+                <ref value="skill_id_3"/>
+                <ref value="skill_id_4"/>
+                <ref value="skill_id_5"/>
+                <ref value="skill_id_6"/>
+                <ref value="skill_id_7"/>
+                <ref value="skill_id_8"/>
             </skills>
             <skillPower>2</skillPower>
             <health>50</health>
