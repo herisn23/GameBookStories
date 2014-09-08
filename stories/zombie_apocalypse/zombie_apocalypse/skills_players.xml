@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
+    <skills>
+        <specialSkill id="skill_id_0" skillName="injection" attempts="1" levelRequired="1" coeff="2.0" increase="true" afterEnemyAttack="true" permanent="true" type="health"/>
+        <specialSkill id="skill_id_1" skillName="concentration" attempts="1" turns="4" levelRequired="2" coeff="0.5" increase="true" condition="true" type="skillpower"/>
+        <specialSkill id="skill_id_2" skillName="adrenaline" attempts="2" levelRequired="5" coeff="3.5" increase="true" permanent="true" type="health"/>
+        <specialSkill id="skill_id_3" skillName="secret_research_fluid" attempts="2" levelRequired="14" coeff="5.0" increase="true" permanent="true" type="health"/>
+        <specialSkill id="skill_id_4" skillName="refreshing_lemonade" attempts="2" turns="5" levelRequired="3" coeff="0.5" increase="true" permanent="true" type="health"/>
+        <specialSkill id="skill_id_5" skillName="injection_with_mortal_virus" attempts="2" turns="3" levelRequired="6" coeff="1.0" beforeEnemyAttack="true" permanent="true" type="health"/>
+        <specialSkill id="skill_id_6" skillName="antivirus_a" attempts="1" turns="5" levelRequired="9" increase="true" proprietarySkill="cancel_debuff"/>
+        <specialSkill id="skill_id_7" skillName="antivirus_b" attempts="1" turns="5" levelRequired="7" increase="true" proprietarySkill="cancel_dot"/>
+        <specialSkill id="skill_id_8" skillName="virus_a" attempts="1" turns="5" levelRequired="13" proprietarySkill="cancel_buff"/>
+        <specialSkill id="skill_id_9" skillName="virus_b" attempts="1" turns="5" levelRequired="10" proprietarySkill="cancel_hot"/>
+        <specialSkill id="skill_id_10" skillName="bulletproof_vest" attempts="2" turns="2" levelRequired="1" increase="true" condition="true" beforeEnemyAttack="true" type="defense"/>
+        <specialSkill id="skill_id_11" skillName="titan_vest" attempts="1" turns="5" levelRequired="5" coeff="2.0" increase="true" condition="true" beforeEnemyAttack="true" type="defense"/>
+        <specialSkill id="skill_id_12" skillName="armored_vest" attempts="2" turns="3" levelRequired="14" coeff="3.5" increase="true" condition="true" beforeEnemyAttack="true" type="defense"/>
+        <specialSkill id="skill_id_13" skillName="time_to_rest" attempts="1" turns="3" levelRequired="2" coeff="3.5" increase="true" proprietarySkill="stun"/>
+        <specialSkill id="skill_id_14" skillName="hard_kick" attempts="2" levelRequired="3" coeff="3.5" permanent="true" type="health"/>
+        <specialSkill id="skill_id_15" skillName="lasting_consequences" attempts="2" turns="3" levelRequired="9" coeff="2.0" permanent="true" type="health"/>
+        <specialSkill id="skill_id_16" skillName="recover" levelRequired="6" proprietarySkill="cancel_debuff"/>
+        <specialSkill id="skill_id_17" skillName="disarm" attempts="1" turns="5" levelRequired="7" condition="true" beforeEnemyAttack="true" type="attack"/>
+        <specialSkill id="skill_id_18" skillName="mind_manipulation" attempts="1" turns="3" levelRequired="10" condition="true" beforeEnemySkill="true" type="skillpower"/>
+        <specialSkill id="skill_id_19" skillName="military_concentration" attempts="1" turns="4" levelRequired="13" coeff="2.0" increase="true" type="attack"/>
+        <specialSkill id="skill_id_20" skillName="incitement" attempts="1" turns="5" levelRequired="1" increase="true" condition="true" type="attack"/>
+        <specialSkill id="skill_id_21" skillName="confidence" attempts="2" turns="3" levelRequired="5" increase="true" condition="true" type="attack"/>
+        <specialSkill id="skill_id_22" skillName="backup_baton" attempts="1" turns="5" levelRequired="14" coeff="3.0" increase="true" condition="true" type="attack"/>
+        <specialSkill id="skill_id_23" skillName="trapping_baton" attempts="1" levelRequired="2" proprietarySkill="stun"/>
+        <specialSkill id="skill_id_24" skillName="head_kick" attempts="2" levelRequired="3" proprietarySkill="kick"/>
+        <specialSkill id="skill_id_25" skillName="left_hook" attempts="4" levelRequired="6" coeff="1.5" permanent="true" type="health"/>
+        <specialSkill id="skill_id_26" skillName="right_hook" attempts="2" turns="5" levelRequired="7" coeff="1.5" permanent="true" type="health"/>
+        <specialSkill id="skill_id_27" skillName="stomp" attempts="1" turns="3" levelRequired="10" coeff="1.5" type="defense"/>
+        <specialSkill id="skill_id_28" skillName="crush_strike" attempts="1" turns="3" levelRequired="9" condition="true" type="defense"/>
+        <specialSkill id="skill_id_29" skillName="trick_with_baton" attempts="1" levelRequired="13" coeff="3.5" permanent="true" type="health"/>
+        <specialSkill id="skill_id_30" skillName="throw_thing" attempts="2" levelRequired="1" permanent="true" type="health"/>
+        <specialSkill id="skill_id_31" skillName="concentration_pills" attempts="1" turns="3" levelRequired="2" coeff="0.3" increase="true" condition="true" type="skillpower"/>
+        <specialSkill id="skill_id_32" skillName="aiming_glasses" attempts="1" turns="6" levelRequired="14" coeff="1.0" increase="true" condition="true" type="skillpower"/>
+        <specialSkill id="skill_id_33" skillName="bear_trap" attempts="1" turns="4" levelRequired="3" condition="true" beforeEnemyAttack="true" type="attack"/>
+        <specialSkill id="skill_id_34" skillName="snare" attempts="1" turns="5" levelRequired="5" condition="true" type="defense"/>
+        <specialSkill id="skill_id_35" skillName="smoke_screen" attempts="1" turns="5" levelRequired="9" condition="true" beforeEnemyAttack="true" type="skill"/>
+        <specialSkill id="skill_id_36" skillName="masterful_escape" attempts="1" turns="2" levelRequired="13" coeff="1.5" increase="true" condition="true" type="luck"/>
+        <specialSkill id="skill_id_37" skillName="perfect_trick" attempts="1" turns="5" levelRequired="7" condition="true" beforeEnemySkill="true" beforeEnemyAttack="true" type="skillpower"/>
+        <specialSkill id="skill_id_38" skillName="perfect_trap" attempts="1" levelRequired="6" coeff="2.5" permanent="true" type="health"/>
+        <specialSkill id="skill_id_39" skillName="strike_from_backup" attempts="1" turns="4" levelRequired="10" coeff="3.0" proprietarySkill="stun"/>
+        <specialSkill id="skill_id_40" skillName="ultimate_doctor" attempts="1" turns="5" levelRequired="15" coeff="4.0" increase="true" proprietarySkill="reflect_damage"/>
+        <specialSkill id="skill_id_41" skillName="ultimate_soldier" attempts="2" turns="1" levelRequired="15" coeff="5.0" increase="true" proprietarySkill="life_leech"/>
+        <specialSkill id="skill_id_42" skillName="ultimate_policeman" attempts="1" turns="5" levelRequired="15" coeff="5.0" proprietarySkill="quick_reaction"/>
+        <specialSkill id="skill_id_43" skillName="ultimate_stalker" attempts="1" turns="5" levelRequired="15" coeff="3.5" proprietarySkill="twice_attack"/>
+    </skills>
+</story>

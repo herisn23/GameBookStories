@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
+    <characters>
+        <character position="1" id="1" name="ch_soldier" description="dsc_soldier">
+            <skills>
+                <ref value="skill_id_10"/>
+                <ref value="skill_id_11"/>
+                <ref value="skill_id_12"/>
+                <ref value="skill_id_13"/>
+                <ref value="skill_id_14"/>
+                <ref value="skill_id_15"/>
+                <ref value="skill_id_16"/>
+                <ref value="skill_id_17"/>
+                <ref value="skill_id_18"/>
+                <ref value="skill_id_19"/>
+                <ref value="skill_id_41"/>
+            </skills>
+            <primaryStat>defense</primaryStat>
+            <health>120</health>
+            <defense>15</defense>
+            <skill>4</skill>
+            <luck>2</luck>
+            <attack>4</attack>
+            <skillPower>1</skillPower>
+        </character>
+        <character position="0" id="2" name="ch_doctor" description="dsc_doctor">
+            <skills>
+                <ref value="skill_id_0"/>
+                <ref value="skill_id_1"/>
+                <ref value="skill_id_2"/>
+                <ref value="skill_id_3"/>
+                <ref value="skill_id_4"/>
+                <ref value="skill_id_5"/>
+                <ref value="skill_id_6"/>
+                <ref value="skill_id_7"/>
+                <ref value="skill_id_8"/>
+                <ref value="skill_id_9"/>
+                <ref value="skill_id_40"/>
+            </skills>
+            <primaryStat>health</primaryStat>
+            <health>60</health>
+            <defense>5</defense>
+            <skill>5</skill>
+            <luck>5</luck>
+            <attack>3</attack>
+            <skillPower>4</skillPower>
+        </character>
+        <character position="47" id="3" name="ch_policeman" description="dsc_policeman">
+            <skills>
+                <ref value="skill_id_20"/>
+                <ref value="skill_id_21"/>
+                <ref value="skill_id_22"/>
+                <ref value="skill_id_23"/>
+                <ref value="skill_id_24"/>
+                <ref value="skill_id_25"/>
+                <ref value="skill_id_26"/>
+                <ref value="skill_id_27"/>
+                <ref value="skill_id_28"/>
+                <ref value="skill_id_29"/>
+                <ref value="skill_id_42"/>
+            </skills>
+            <primaryStat>attack</primaryStat>
+            <health>80</health>
+            <defense>4</defense>
+            <skill>10</skill>
+            <luck>2</luck>
+            <attack>10</attack>
+            <skillPower>2</skillPower>
+        </character>
+        <character position="0" id="4" name="ch_stalker" description="dsc_stalker">
+            <skills>
+                <ref value="skill_id_30"/>
+                <ref value="skill_id_31"/>
+                <ref value="skill_id_32"/>
+                <ref value="skill_id_33"/>
+                <ref value="skill_id_34"/>
+                <ref value="skill_id_35"/>
+                <ref value="skill_id_36"/>
+                <ref value="skill_id_37"/>
+                <ref value="skill_id_38"/>
+                <ref value="skill_id_39"/>
+                <ref value="skill_id_43"/>
+            </skills>
+            <primaryStat>skillpower</primaryStat>
+            <health>50</health>
+            <defense>2</defense>
+            <skill>2</skill>
+            <luck>10</luck>
+            <attack>2</attack>
+            <skillPower>7</skillPower>
+        </character>
+    </characters>
+</story>

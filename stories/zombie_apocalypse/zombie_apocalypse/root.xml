@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
+    <background>@drawable/zombie</background>
+    <version>0</version>
+    <include name="characters_lines/doctor_line.xml"/>
+    <include name="characters_lines/stalker_line.xml"/>
+    <include name="characters_lines/policeman_line.xml"/>
+    <include name="characters_lines/soldier_line.xml"/>
+    <include name="enemies/bosses.xml"/>
+    <include name="enemies/enemies.xml"/>
+    <include name="enemies/minions.xml"/>
+    <include name="shared_lines/crossroad.xml"/>
+    <include name="shared_lines/kaltul_line.xml"/>
+    <include name="shared_lines/mirnis_line.xml"/>
+    <include name="shared_lines/port_line.xml"/>
+    <include name="characters.xml"/>
+    <include name="skills_players.xml"/>
+</story>
