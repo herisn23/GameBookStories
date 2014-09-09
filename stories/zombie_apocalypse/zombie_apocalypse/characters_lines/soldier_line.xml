@@ -273,7 +273,7 @@
                 <option section="29" text="section41_option1_text"/>
             </options>
         </section>
-        <section position="19" text="section19_text" enemiesDefeatedText="section19_enemy_text">
+        <section comment="soldier with doctor meeting" position="19" text="section19_text" enemiesDefeatedText="section19_enemy_text">
             <bonuses>
                 <bonus type="health" value="50" permanent="false" overflowed="true"/>
                 <bonus type="attack" value="4" permanent="false" overflowed="true"/>
@@ -281,7 +281,7 @@
                 <bonus type="defense" value="4" permanent="false" overflowed="true"/>
                 <bonus type="luck" value="2" permanent="false" overflowed="true"/>
                 <bonus type="skillpower" value="3" permanent="false" overflowed="true"/>
-                <bonus type="health" base="true" value="10" state="after_fight"/>
+                <bonus type="health" base="true" value="20" state="after_fight"/>
                 <bonus type="skillpower" base="true" value="1" state="after_fight"/>
             </bonuses>
             <enemies>
@@ -297,7 +297,7 @@
                 <option section="40" text="section19_option1_text"/>
             </options>
         </section>
-        <section position="39" text="section39_text" enemiesDefeatedText="section39_enemy_text">
+        <section comment="soldier with policeman meeting" position="39" text="section39_text" enemiesDefeatedText="section39_enemy_text">
             <bonuses>
                 <bonus type="health" value="40" permanent="false" overflowed="true"/>
                 <bonus type="attack" value="5" permanent="false" overflowed="true"/>
@@ -321,7 +321,7 @@
                 <option section="40" text="section39_option1_text"/>
             </options>
         </section>
-        <section position="29" text="section29_text" enemiesDefeatedText="section29_enemy_text">
+        <section comment="soldier with stalker meeting" position="29" text="section29_text" enemiesDefeatedText="section29_enemy_text">
             <bonuses>
                 <bonus type="health" value="30" permanent="false" overflowed="true"/>
                 <bonus type="attack" value="4" permanent="false" overflowed="true"/>

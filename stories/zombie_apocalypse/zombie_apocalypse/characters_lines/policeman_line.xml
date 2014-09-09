@@ -80,7 +80,7 @@
         <section position="58" alreadyVisitedText="section58_visited_text" text="section58_text">
             <options>
                 <option section="59" text="section58_option1_text"/>
-                <option section="0" text="section58_option2_text"/>
+                <option section="65" text="section58_option2_text"/>
             </options>
         </section>
         <section position="59" alreadyVisitedText="section59_visited_text" text="section59_text">
@@ -127,6 +127,67 @@
             <options>
                 <option section="59" text="section64_option1_text"/>
             </options>
+        </section>
+        <section comment="policeman with doctor meeting" position="65" text="section65_text" enemiesDefeatedText="section65_enemies_defeated_text">
+            <bonuses>
+                <bonus type="health" value="30" permanent="false" overflowed="true"/>
+                <bonus type="attack" value="4" permanent="false" overflowed="true"/>
+                <bonus type="skill" value="5" permanent="false" overflowed="true"/>
+                <bonus type="defense" value="2" permanent="false" overflowed="true"/>
+                <bonus type="luck" value="5" permanent="false" overflowed="true"/>
+                <bonus type="skillpower" value="3" permanent="false" overflowed="true"/>
+                <bonus type="skillpower" base="true" value="1" state="after_fight"/>
+                <bonus type="health" value="30" state="after_fight"/>
+            </bonuses>
+            <enemies>
+                <ref value="living_dead"/>
+                <ref value="nohander"/>
+                <ref value="rotten_corpse"/>
+                <ref value="living_dead"/>
+                <ref value="living_dead"/>
+                <ref value="zombie"/>
+                <ref value="brain_eater"/>
+            </enemies>
+            <options>
+                <option section="40" text="section65_option_text"/>
+            </options>
+        </section>
+        <section comment="policeman with soldier meeting" position="66" text="section66_text">
+            <bonuses>
+                <bonus type="health" value="80" permanent="false" overflowed="true"/>
+                <bonus type="defense" value="10" permanent="false" overflowed="true"/>
+                <bonus type="attack" value="4" permanent="false" overflowed="true"/>
+                <bonus type="health" base="true" value="50" state="after_fight"/>
+                <bonus type="defense" value="5" state="after_fight"/>
+            </bonuses>
+            <enemies>
+                <ref value="living_dead"/>
+                <ref value="nohander"/>
+                <ref value="rotten_corpse"/>
+                <ref value="living_dead"/>
+                <ref value="living_dead"/>
+                <ref value="zombie"/>
+                <ref value="brain_eater"/>
+            </enemies>
+        </section>
+        <section comment="policeman with stalker meeting" position="67" text="section67_text">
+            <bonuses>
+                <bonus type="health" value="10" permanent="false" overflowed="true"/>
+                <bonus type="skill" value="5" permanent="false" overflowed="true"/>
+                <bonus type="luck" value="10" permanent="false" overflowed="true"/>
+                <bonus type="skillpower" value="5" permanent="false" overflowed="true"/>
+                <bonus type="luck" base="true" value="5" state="after_fight"/>
+                <bonus type="skillpower" value="3" state="after_fight"/>
+            </bonuses>
+            <enemies>
+                <ref value="living_dead"/>
+                <ref value="nohander"/>
+                <ref value="rotten_corpse"/>
+                <ref value="living_dead"/>
+                <ref value="living_dead"/>
+                <ref value="zombie"/>
+                <ref value="brain_eater"/>
+            </enemies>
         </section>
     </sections>
 </story>
