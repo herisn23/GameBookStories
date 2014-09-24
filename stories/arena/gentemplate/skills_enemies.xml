@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
+    <skills>
+        <specialSkill id="skill_id_15" skillName="bite" attempts="3" levelRequired="1" permanent="true" type="health"/>
+        <specialSkill id="skill_id_16" skillName="roar" attempts="1" turns="5" levelRequired="2" increase="true" condition="true" type="attack"/>
+        <specialSkill id="skill_id_17" skillName="disarm" attempts="2" turns="5" levelRequired="3" condition="true" type="attack"/>
+        <specialSkill id="skill_id_18" skillName="stealth" attempts="2" turns="5" levelRequired="5" coeff="1.0" increase="true" condition="true" type="luck"/>
+        <specialSkill id="skill_id_19" skillName="mighty_strike" attempts="4" levelRequired="10" coeff="2.0" permanent="true" type="health"/>
+    </skills>
+</story>

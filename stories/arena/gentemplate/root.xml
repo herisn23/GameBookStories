@@ -3,5 +3,6 @@
     <version>1</version>
     <include name="characters.xml"/>
     <include name="enemies.xml"/>
-    <include name="skills.xml"/>
+    <include name="skills_enemies.xml"/>
+    <include name="skills_wizzard.xml"/>
 </story>

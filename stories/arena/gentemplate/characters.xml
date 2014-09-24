@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <story>
     <characters>
-        <character position="1" id="1" name="clerik" description="clerik_desc">
+        <character position="0" id="1" name="wizzard" description="wizzard_description">
             <skills>
                 <ref value="skill_id_0"/>
                 <ref value="skill_id_1"/>
@@ -12,15 +12,20 @@
                 <ref value="skill_id_6"/>
                 <ref value="skill_id_7"/>
                 <ref value="skill_id_8"/>
+                <ref value="skill_id_9"/>
+                <ref value="skill_id_10"/>
+                <ref value="skill_id_11"/>
+                <ref value="skill_id_12"/>
+                <ref value="skill_id_13"/>
+                <ref value="skill_id_14"/>
             </skills>
             <primaryStat>skillpower</primaryStat>
-            <health>50</health>
-            <defense>3</defense>
+            <health>60</health>
+            <defense>2</defense>
             <skill>3</skill>
-            <luck>3</luck>
-            <attack>5</attack>
-            <baseDamage>1</baseDamage>
-            <skillPower>3</skillPower>
+            <luck>4</luck>
+            <attack>2</attack>
+            <skillPower>8</skillPower>
         </character>
     </characters>
 </story>
