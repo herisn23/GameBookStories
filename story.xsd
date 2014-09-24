@@ -63,6 +63,7 @@
 			<xs:enumeration value="skillpower" />
 		</xs:restriction>
 	</xs:simpleType>
+	
 	<xs:simpleType name="enemyLevelType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="boss" />
@@ -72,16 +73,33 @@
 	</xs:simpleType>
 	<xs:simpleType name="proprietarySkill">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="twice_attack" />
-			<xs:enumeration value="reflect_damage" />
-			<xs:enumeration value="life_leech" />
-			<xs:enumeration value="quick_reaction" />
+			<xs:enumeration value="kick" />
 			<xs:enumeration value="cancel_hot" />
-			<xs:enumeration value="cancel_dot" />
+			<xs:enumeration value="life_leech" />
+			<xs:enumeration value="stun" />
 			<xs:enumeration value="cancel_buff" />
 			<xs:enumeration value="cancel_debuff" />
-			<xs:enumeration value="kick" />
-			<xs:enumeration value="stun" />
+			<xs:enumeration value="twice_attack" />
+			<xs:enumeration value="quick_reaction" />
+			<xs:enumeration value="cancel_dot" />
+			<xs:enumeration value="reflect_damage" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="passiveSkills">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="passiveDodgeIsSkill" />
+			<xs:enumeration value="passiveLeech" />
+			<xs:enumeration value="passiveBoost" />
+			<xs:enumeration value="passiveLuckIsSkillpower" />
+			<xs:enumeration value="passiveCriticalSkills" />
+			<xs:enumeration value="passiveHealthForSkillpower" />
+			<xs:enumeration value="passiveAttackBuff" />
+			<xs:enumeration value="passiveHealthForAttack" />
+			<xs:enumeration value="passiveHealthIsDefense" />
+			<xs:enumeration value="passiveHealthIncrease" />
+			<xs:enumeration value="passiveDefenseBuff" />
+			<xs:enumeration value="passiveDefenseIsAttack" />
+			<xs:enumeration value="passiveAOE" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="androidDrawable">
@@ -234,6 +252,13 @@
 			<xs:element type="xs:int" name="baseDamage" minOccurs="0"/>
 		</xs:sequence>
 		<xs:attribute type="xs:string" name="name" use="required" />
+		<xs:attribute type="xs:int" name="difficulty" use="optional" >
+			<xs:annotation>
+				<xs:documentation>
+					This attribute is used by autogeneration story.
+				</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
 		<xs:attribute type="xs:float" name="xpcoeff" use="optional" />
 		<xs:attribute type="enemyLevelType" name="type" use="optional" />
 		<xs:attribute type="xs:string" name="id" use="required" />
