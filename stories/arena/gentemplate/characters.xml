@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <story>
     <characters>
-        <character position="0" id="1" name="wizzard" description="wizzard_description">
+        <character position="0" id="1" name="sorcerer" description="sorcerer_description">
             <skills>
                 <ref value="skill_id_0"/>
                 <ref value="skill_id_1"/>
