@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
+    <include name="sections/section_lv_1.xml"/>
+    <include name="sections/section_lv_10.xml"/>
+    <include name="sections/section_lv_11.xml"/>
+    <include name="sections/section_lv_12.xml"/>
+    <include name="sections/section_lv_13.xml"/>
+    <include name="sections/section_lv_14.xml"/>
+    <include name="sections/section_lv_15.xml"/>
+    <include name="sections/section_lv_16.xml"/>
+    <include name="sections/section_lv_17.xml"/>
+    <include name="sections/section_lv_18.xml"/>
+    <include name="sections/section_lv_19.xml"/>
+    <include name="sections/section_lv_2.xml"/>
+    <include name="sections/section_lv_20.xml"/>
+    <include name="sections/section_lv_3.xml"/>
+    <include name="sections/section_lv_4.xml"/>
+    <include name="sections/section_lv_5.xml"/>
+    <include name="sections/section_lv_6.xml"/>
+    <include name="sections/section_lv_7.xml"/>
+    <include name="sections/section_lv_8.xml"/>
+    <include name="sections/section_lv_9.xml"/>
+    <include name="characters.xml"/>
+    <include name="enemies.xml"/>
+    <include name="enemies_skills.xml"/>
+    <include name="sorcerer_skills.xml"/>
+</story>

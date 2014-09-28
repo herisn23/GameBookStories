@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
+    <skills>
+        <specialSkill id="skill_id_0" skillName="firebolt" attempts="5" levelRequired="1" permanent="true" type="health"/>
+        <specialSkill id="skill_id_1" skillName="frostbolt" attempts="2" levelRequired="5" coeff="1.5" permanent="true" type="health" proprietarySkill="kick"/>
+        <specialSkill id="skill_id_2" skillName="fire_ring" attempts="1" turns="3" levelRequired="2"/>
+        <specialSkill id="skill_id_3" skillName="fireball" attempts="2" turns="3" levelRequired="11" coeff="1.5" permanent="true" type="health"/>
+        <specialSkill id="skill_id_4" skillName="frost_armor" attempts="1" turns="8" levelRequired="4" increase="true" condition="true" type="defense"/>
+        <specialSkill id="skill_id_5" skillName="tornado" attempts="1" turns="6" levelRequired="10" coeff="2.0" permanent="true" type="health" proprietarySkill="stun"/>
+        <specialSkill id="skill_id_6" skillName="dark_mark" attempts="1" turns="8" levelRequired="14" coeff="2.0" condition="true" type="defense"/>
+        <specialSkill id="skill_id_7" skillName="evocation" attempts="1" turns="1" levelRequired="13" increase="true" condition="true" type="skillpower"/>
+        <specialSkill id="skill_id_8" skillName="invocation" attempts="1" turns="4" levelRequired="7" coeff="0.3" increase="true" condition="true" type="attack"/>
+        <specialSkill id="skill_id_9" skillName="poison_dart" attempts="2" turns="1" levelRequired="8" coeff="0.5" permanent="true" type="health"/>
+        <specialSkill id="skill_id_10" skillName="conversion" attempts="1" levelRequired="16" proprietarySkill="life_leech"/>
+        <specialSkill id="skill_id_11" skillName="dark_cloud" attempts="1" turns="5" levelRequired="17" coeff="2.0" type="attack"/>
+        <specialSkill id="skill_id_12" skillName="cleansing" attempts="1" turns="3" levelRequired="7" coeff="0.5" increase="true" proprietarySkill="cancel_dot"/>
+        <specialSkill id="skill_id_13" skillName="magic_distraction" attempts="1" turns="5" levelRequired="19" coeff="3.0" proprietarySkill="cancel_buff"/>
+        <specialSkill id="skill_id_14" skillName="darkness" attempts="1" turns="5" levelRequired="20" coeff="3.0" increase="true" proprietarySkill="reflect_damage"/>
+    </skills>
+</story>

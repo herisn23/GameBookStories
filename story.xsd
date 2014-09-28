@@ -73,26 +73,33 @@
 	</xs:simpleType>
 	<xs:simpleType name="proprietarySkill">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="kick" />
-			<xs:enumeration value="cancel_hot" />
 			<xs:enumeration value="life_leech" />
-			<xs:enumeration value="stun" />
+			<xs:enumeration value="kick" />
+			<xs:enumeration value="summon_tank" />
+			<xs:enumeration value="summon_mage" />
 			<xs:enumeration value="cancel_buff" />
 			<xs:enumeration value="cancel_debuff" />
+			<xs:enumeration value="summon_fighter" />
 			<xs:enumeration value="twice_attack" />
 			<xs:enumeration value="quick_reaction" />
 			<xs:enumeration value="cancel_dot" />
+			<xs:enumeration value="cancel_hot" />
+			<xs:enumeration value="stun" />
 			<xs:enumeration value="reflect_damage" />
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="passiveSkills">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="passiveDodgeIsSkill" />
+			<xs:enumeration value="toughSummon" />
 			<xs:enumeration value="passiveLeech" />
 			<xs:enumeration value="passiveBoost" />
 			<xs:enumeration value="passiveLuckIsSkillpower" />
 			<xs:enumeration value="passiveCriticalSkills" />
+			<xs:enumeration value="armoredSummon" />
+			<xs:enumeration value="strongSummon" />
 			<xs:enumeration value="passiveHealthForSkillpower" />
+			<xs:enumeration value="enragedSummon" />
 			<xs:enumeration value="passiveAttackBuff" />
 			<xs:enumeration value="passiveHealthForAttack" />
 			<xs:enumeration value="passiveHealthIsDefense" />

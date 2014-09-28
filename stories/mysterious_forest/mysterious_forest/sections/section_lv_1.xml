@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
+    <sections>
+        <section level="1" position="1" text="start_game">
+            <options>
+                <option section="2" text="start_game_opt1"/>
+                <option section="3" text="start_game_opt2"/>
+            </options>
+        </section>
+        <section level="1" position="2" text="s2_text" enemiesDefeatedText="s2_ed">
+            <enemies>
+                <ref value="enemy_id_2"/>
+                <ref value="enemy_id_2"/>
+            </enemies>
+            <options>
+                <option section="4" text="default_option_text"/>
+            </options>
+        </section>
+        <section level="1" position="3"/>
+        <section level="1" position="4" text="s4_text">
+            <options>
+                <option section="3" text="s4_opt1"/>
+                <option section="5" text="s4_opt2"/>
+            </options>
+        </section>
+        <section level="1" position="5" text="s5_text">
+            <options>
+                <option section="6" text="s5_opt1"/>
+                <option section="7" text="s5_opt2"/>
+            </options>
+        </section>
+        <section level="1" position="6" text="s6_text" enemiesDefeatedText="s6_ed">
+            <bonuses>
+                <bonus type="health" value="20" state="before_fight"/>
+            </bonuses>
+            <enemies>
+                <ref value="enemy_id_3"/>
+                <ref value="enemy_id_3"/>
+                <ref value="enemy_id_3"/>
+            </enemies>
+            <options>
+                <option section="7" text="default_option_text"/>
+            </options>
+        </section>
+        <section level="1" position="7"/>
+        <section level="1" position="8"/>
+        <section level="1" position="9"/>
+        <section level="1" position="10"/>
+        <section level="1" position="11"/>
+        <section level="1" position="12"/>
+        <section level="1" position="13"/>
+        <section level="1" position="14"/>
+        <section level="1" position="15"/>
+        <section level="1" position="16"/>
+        <section level="1" position="17"/>
+        <section level="1" position="18"/>
+        <section level="1" position="19"/>
+        <section level="1" position="20"/>
+        <section level="1" position="21"/>
+        <section level="1" position="22"/>
+        <section level="1" position="23"/>
+        <section level="1" position="24"/>
+        <section level="1" position="25"/>
+        <section level="1" position="26"/>
+        <section level="1" position="27"/>
+        <section level="1" position="28"/>
+        <section level="1" position="29"/>
+        <section level="1" position="30"/>
+    </sections>
+</story>

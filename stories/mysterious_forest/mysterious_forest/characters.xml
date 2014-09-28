@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
+    <characters>
+        <character position="1" id="1" name="sorcerer" description="sorcerer_description">
+            <skills>
+                <ref value="skill_id_0"/>
+                <ref value="skill_id_1"/>
+                <ref value="skill_id_2"/>
+                <ref value="skill_id_3"/>
+                <ref value="skill_id_4"/>
+                <ref value="skill_id_5"/>
+                <ref value="skill_id_6"/>
+                <ref value="skill_id_7"/>
+                <ref value="skill_id_8"/>
+                <ref value="skill_id_9"/>
+                <ref value="skill_id_10"/>
+                <ref value="skill_id_11"/>
+                <ref value="skill_id_12"/>
+                <ref value="skill_id_13"/>
+                <ref value="skill_id_14"/>
+            </skills>
+            <primaryStat>skillpower</primaryStat>
+            <health>60</health>
+            <defense>2</defense>
+            <skill>3</skill>
+            <luck>4</luck>
+            <attack>2</attack>
+            <skillPower>8</skillPower>
+        </character>
+    </characters>
+</story>

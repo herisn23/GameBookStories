@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
+    <skills>
+        <specialSkill id="skill_id_15" skillName="bite" attempts="3" levelRequired="1" permanent="true" type="health"/>
+        <specialSkill id="skill_id_16" skillName="roar" attempts="1" turns="5" levelRequired="2" increase="true" condition="true" type="attack"/>
+        <specialSkill id="skill_id_17" skillName="disarm" attempts="2" turns="5" levelRequired="3" condition="true" type="attack"/>
+        <specialSkill id="skill_id_18" skillName="stealth" attempts="2" turns="5" levelRequired="4" coeff="1.0" increase="true" condition="true" type="luck"/>
+        <specialSkill id="skill_id_19" skillName="mighty_strike" attempts="4" levelRequired="5" coeff="2.0" permanent="true" type="health"/>
+        <specialSkill id="skill_id_20" skillName="dark_servant" attempts="1" levelRequired="10" proprietarySkill="twice_attack"/>
+        <specialSkill id="skill_id_21" skillName="mysterious_golem" attempts="1" levelRequired="5" proprietarySkill="summon_tank"/>
+        <specialSkill id="skill_id_22" skillName="dark_warrior" attempts="1" levelRequired="15" coeff="1.3" proprietarySkill="summon_fighter"/>
+        <specialSkill id="skill_id_23" skillName="venomous_bite" attempts="1" turns="5" levelRequired="4" permanent="true" type="health"/>
+        <specialSkill id="skill_id_24" skillName="forest_gift" attempts="1" turns="8" levelRequired="8" increase="true" permanent="true" type="health"/>
+        <specialSkill id="skill_id_25" skillName="forest_power" attempts="1" turns="10" levelRequired="13" coeff="1.4" increase="true" condition="true" type="skillpower"/>
+        <specialSkill id="skill_id_26" skillName="life_leech" attempts="1" turns="8" levelRequired="12" coeff="1.6" increase="true" proprietarySkill="life_leech"/>
+        <specialSkill id="skill_id_27" skillName="forest_help" attempts="2" turns="5" levelRequired="2" increase="true"/>
+        <specialSkill id="skill_id_28" skillName="dark_strike" attempts="2" levelRequired="1" coeff="1.8" permanent="true" type="health"/>
+        <specialSkill id="skill_id_29" skillName="assassinate" attempts="1" levelRequired="12" coeff="1.6" permanent="true" type="health" proprietarySkill="twice_attack"/>
+        <specialSkill id="skill_id_30" skillName="darknee_cloud" attempts="2" turns="4" levelRequired="1" coeff="1.2" proprietarySkill="stun"/>
+        <specialSkill id="skill_id_31" skillName="forest_defense" attempts="1" turns="10" levelRequired="6" coeff="1.3" increase="true" condition="true" beforeEnemyAttack="true" type="defense"/>
+        <specialSkill id="skill_id_32" skillName="knowledge_of_forest" attempts="1" turns="4" levelRequired="7" coeff="2.0" increase="true" condition="true" type="skill"/>
+        <specialSkill id="skill_id_33" skillName="materialization_of_darkness" attempts="1" turns="4" levelRequired="18" coeff="2.0" increase="true" proprietarySkill="summon_tank"/>
+        <specialSkill id="skill_id_34" skillName="destruction" attempts="3" turns="3" levelRequired="16" coeff="2.6" beforeEnemySkill="true" beforeEnemyAttack="true" permanent="true" type="health"/>
+        <specialSkill id="skill_id_35" skillName="prophecy_of_forest" attempts="2" levelRequired="17" coeff="2.3" increase="true" permanent="true" type="health" proprietarySkill="reflect_damage"/>
+        <specialSkill id="skill_id_36" skillName="forest_peace" attempts="2" levelRequired="8" proprietarySkill="cancel_dot"/>
+        <specialSkill id="skill_id_37" skillName="dark_cleanse" attempts="3" levelRequired="7" proprietarySkill="cancel_hot"/>
+        <specialSkill id="skill_id_38" skillName="cleanse_from_forest" attempts="3" levelRequired="10" proprietarySkill="cancel_debuff"/>
+        <specialSkill id="skill_id_39" skillName="dark_might" attempts="2" levelRequired="13" coeff="1.8" permanent="true" type="health" proprietarySkill="cancel_buff"/>
+    </skills>
+</story>

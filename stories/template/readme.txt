@@ -1,0 +1,1 @@
+This is template for other stories, wich contain neceseray texts, predefined skills, etc..

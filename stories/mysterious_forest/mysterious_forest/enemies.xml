@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<story>
+    <enemies>
+        <enemy name="wolf" id="enemy_id_0">
+            <skills>
+                <ref value="skill_id_15"/>
+            </skills>
+            <skillPower>1</skillPower>
+            <health>30</health>
+            <defense>2</defense>
+            <skill>2</skill>
+            <luck>1</luck>
+            <attack>3</attack>
+        </enemy>
+        <enemy name="big_rat" id="enemy_id_1">
+            <skills/>
+            <health>20</health>
+            <defense>1</defense>
+            <skill>1</skill>
+            <luck>1</luck>
+            <attack>2</attack>
+        </enemy>
+        <enemy name="skeleton" id="enemy_id_2">
+            <skills>
+                <ref value="skill_id_19"/>
+                <ref value="skill_id_17"/>
+            </skills>
+            <health>50</health>
+            <defense>1</defense>
+            <skill>2</skill>
+            <luck>3</luck>
+            <attack>4</attack>
+        </enemy>
+        <enemy name="goblin" id="enemy_id_3">
+            <skills>
+                <ref value="skill_id_16"/>
+                <ref value="skill_id_17"/>
+            </skills>
+            <health>60</health>
+            <defense>2</defense>
+            <skill>2</skill>
+            <luck>2</luck>
+            <attack>2</attack>
+        </enemy>
+        <enemy name="goblin_champion" difficulty="2" xpcoeff="1.5" type="minion" id="enemy_id_4">
+            <skills>
+                <ref value="skill_id_16"/>
+                <ref value="skill_id_17"/>
+                <ref value="skill_id_19"/>
+            </skills>
+            <health>70</health>
+            <defense>2</defense>
+            <skill>2</skill>
+            <luck>2</luck>
+            <attack>5</attack>
+        </enemy>
+        <enemy name="goblin_king" difficulty="3" xpcoeff="2.3" type="boss" id="enemy_id_5">
+            <skills>
+                <ref value="skill_id_16"/>
+                <ref value="skill_id_17"/>
+                <ref value="skill_id_18"/>
+                <ref value="skill_id_19"/>
+            </skills>
+            <health>100</health>
+            <defense>5</defense>
+            <skill>5</skill>
+            <luck>5</luck>
+            <attack>8</attack>
+        </enemy>
+        <enemy name="manticore" difficulty="5" xpcoeff="1.0" type="creature" id="enemy_id_6">
+            <skills>
+                <ref value="skill_id_27"/>
+                <ref value="skill_id_25"/>
+                <ref value="skill_id_23"/>
+                <ref value="skill_id_34"/>
+                <ref value="skill_id_36"/>
+            </skills>
+            <skillPower>3</skillPower>
+            <health>120</health>
+            <defense>5</defense>
+            <skill>5</skill>
+            <luck>1</luck>
+            <attack>5</attack>
+        </enemy>
+        <enemy name="mother_of_forest" difficulty="10" xpcoeff="3.0" type="boss" id="enemy_id_7">
+            <skills>
+                <ref value="skill_id_25"/>
+                <ref value="skill_id_24"/>
+                <ref value="skill_id_31"/>
+                <ref value="skill_id_21"/>
+                <ref value="skill_id_35"/>
+                <ref value="skill_id_36"/>
+                <ref value="skill_id_38"/>
+                <ref value="skill_id_32"/>
+                <ref value="skill_id_27"/>
+            </skills>
+            <skillPower>8</skillPower>
+            <health>180</health>
+            <defense>2</defense>
+            <skill>10</skill>
+            <luck>2</luck>
+            <attack>11</attack>
+        </enemy>
+        <enemy name="forest_guard" difficulty="4" id="enemy_id_8">
+            <skills>
+                <ref value="skill_id_24"/>
+                <ref value="skill_id_17"/>
+                <ref value="skill_id_27"/>
+            </skills>
+            <health>70</health>
+            <defense>15</defense>
+            <skill>3</skill>
+            <luck>1</luck>
+            <attack>4</attack>
+        </enemy>
+        <enemy name="ghost" difficulty="4" xpcoeff="0.3" type="minion" id="enemy_id_9">
+            <skills>
+                <ref value="skill_id_26"/>
+                <ref value="skill_id_28"/>
+                <ref value="skill_id_37"/>
+                <ref value="skill_id_20"/>
+                <ref value="skill_id_39"/>
+            </skills>
+            <skillPower>5</skillPower>
+            <health>95</health>
+            <defense>5</defense>
+            <skill>5</skill>
+            <luck>5</luck>
+            <attack>7</attack>
+        </enemy>
+        <enemy name="passage_guard" difficulty="0" type="boss" id="enemy_id_10">
+            <skills>
+                <ref value="skill_id_33"/>
+                <ref value="skill_id_19"/>
+                <ref value="skill_id_28"/>
+                <ref value="skill_id_29"/>
+                <ref value="skill_id_22"/>
+                <ref value="skill_id_36"/>
+                <ref value="skill_id_32"/>
+            </skills>
+            <skillPower>8</skillPower>
+            <health>80</health>
+            <defense>8</defense>
+            <skill>8</skill>
+            <luck>8</luck>
+            <attack>8</attack>
+        </enemy>
+        <enemy name="ent" difficulty="7" id="enemy_id_11">
+            <skills>
+                <ref value="skill_id_24"/>
+                <ref value="skill_id_25"/>
+                <ref value="skill_id_32"/>
+                <ref value="skill_id_31"/>
+                <ref value="skill_id_38"/>
+                <ref value="skill_id_35"/>
+            </skills>
+            <skillPower>1</skillPower>
+            <health>250</health>
+            <defense>10</defense>
+            <skill>20</skill>
+            <luck>1</luck>
+            <attack>3</attack>
+        </enemy>
+        <enemy name="blossom_ent" difficulty="13" type="boss" id="enemy_id_12">
+            <skills>
+                <ref value="skill_id_24"/>
+                <ref value="skill_id_25"/>
+                <ref value="skill_id_27"/>
+                <ref value="skill_id_31"/>
+                <ref value="skill_id_32"/>
+                <ref value="skill_id_35"/>
+                <ref value="skill_id_36"/>
+                <ref value="skill_id_38"/>
+            </skills>
+            <skillPower>5</skillPower>
+            <health>80</health>
+            <defense>25</defense>
+            <skill>15</skill>
+            <luck>0</luck>
+            <attack>35</attack>
+        </enemy>
+        <enemy name="pure_evil" difficulty="15" xpcoeff="3.0" type="boss" id="enemy_id_13">
+            <skills>
+                <ref value="skill_id_33"/>
+                <ref value="skill_id_20"/>
+                <ref value="skill_id_22"/>
+                <ref value="skill_id_28"/>
+                <ref value="skill_id_30"/>
+                <ref value="skill_id_37"/>
+                <ref value="skill_id_39"/>
+            </skills>
+            <skillPower>10</skillPower>
+            <health>200</health>
+            <defense>10</defense>
+            <skill>15</skill>
+            <luck>5</luck>
+            <attack>15</attack>
+        </enemy>
+        <enemy name="wood_troll" difficulty="8" xpcoeff="0.3" type="minion" id="enemy_id_14">
+            <skills>
+                <ref value="skill_id_16"/>
+                <ref value="skill_id_17"/>
+                <ref value="skill_id_19"/>
+                <ref value="skill_id_27"/>
+                <ref value="skill_id_32"/>
+            </skills>
+            <skillPower>1</skillPower>
+            <health>140</health>
+            <defense>1</defense>
+            <skill>1</skill>
+            <luck>1</luck>
+            <attack>10</attack>
+        </enemy>
+        <enemy name="destroyer" difficulty="6" xpcoeff="0.8" type="minion" id="enemy_id_15">
+            <skills>
+                <ref value="skill_id_29"/>
+                <ref value="skill_id_22"/>
+                <ref value="skill_id_39"/>
+                <ref value="skill_id_17"/>
+                <ref value="skill_id_16"/>
+                <ref value="skill_id_34"/>
+            </skills>
+            <skillPower>4</skillPower>
+            <health>80</health>
+            <defense>2</defense>
+            <skill>5</skill>
+            <luck>5</luck>
+            <attack>20</attack>
+        </enemy>
+        <enemy name="ignis_fatuus" difficulty="7" xpcoeff="0.3" type="minion" id="enemy_id_16">
+            <skills>
+                <ref value="skill_id_24"/>
+                <ref value="skill_id_36"/>
+                <ref value="skill_id_35"/>
+                <ref value="skill_id_28"/>
+                <ref value="skill_id_26"/>
+                <ref value="skill_id_27"/>
+            </skills>
+            <skillPower>15</skillPower>
+            <health>20</health>
+            <defense>0</defense>
+            <skill>2</skill>
+            <luck>0</luck>
+            <attack>5</attack>
+        </enemy>
+        <enemy name="assassin" difficulty="6" id="enemy_id_17">
+            <skills>
+                <ref value="skill_id_29"/>
+                <ref value="skill_id_18"/>
+            </skills>
+            <skillPower>1</skillPower>
+            <health>30</health>
+            <defense>0</defense>
+            <skill>20</skill>
+            <luck>15</luck>
+            <attack>10</attack>
+        </enemy>
+        <enemy name="talking_stone" difficulty="0" type="boss" id="enemy_id_18">
+            <skills>
+                <ref value="skill_id_27"/>
+                <ref value="skill_id_25"/>
+                <ref value="skill_id_31"/>
+                <ref value="skill_id_32"/>
+                <ref value="skill_id_21"/>
+            </skills>
+            <skillPower>1</skillPower>
+            <health>200</health>
+            <defense>30</defense>
+            <skill>20</skill>
+            <luck>10</luck>
+            <attack>1</attack>
+        </enemy>
+        <enemy name="spider" difficulty="2" xpcoeff="0.0" id="enemy_id_19">
+            <skills>
+                <ref value="skill_id_23"/>
+                <ref value="skill_id_15"/>
+            </skills>
+            <skillPower>3</skillPower>
+            <health>40</health>
+            <defense>1</defense>
+            <skill>1</skill>
+            <luck>10</luck>
+            <attack>4</attack>
+        </enemy>
+        <enemy name="lord_of_darkness" difficulty="20" type="boss" id="enemy_id_20">
+            <skills>
+                <ref value="skill_id_20"/>
+                <ref value="skill_id_22"/>
+                <ref value="skill_id_37"/>
+                <ref value="skill_id_39"/>
+                <ref value="skill_id_30"/>
+                <ref value="skill_id_33"/>
+                <ref value="skill_id_34"/>
+                <ref value="skill_id_29"/>
+                <ref value="skill_id_28"/>
+                <ref value="skill_id_26"/>
+            </skills>
+            <skillPower>20</skillPower>
+            <health>500</health>
+            <defense>40</defense>
+            <skill>20</skill>
+            <luck>20</luck>
+            <attack>50</attack>
+        </enemy>
+    </enemies>
+</story>
