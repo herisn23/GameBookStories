@@ -6,7 +6,7 @@
                 <ref value="skill_id_15"/>
             </skills>
             <skillPower>1</skillPower>
-            <health>30</health>
+            <health>9</health>
             <defense>2</defense>
             <skill>2</skill>
             <luck>1</luck>
@@ -14,7 +14,7 @@
         </enemy>
         <enemy name="big_rat" id="enemy_id_1">
             <skills/>
-            <health>20</health>
+            <health>5</health>
             <defense>1</defense>
             <skill>1</skill>
             <luck>1</luck>
@@ -25,7 +25,7 @@
                 <ref value="skill_id_19"/>
                 <ref value="skill_id_17"/>
             </skills>
-            <health>50</health>
+            <health>10</health>
             <defense>1</defense>
             <skill>2</skill>
             <luck>3</luck>
@@ -36,7 +36,7 @@
                 <ref value="skill_id_16"/>
                 <ref value="skill_id_17"/>
             </skills>
-            <health>60</health>
+            <health>20</health>
             <defense>2</defense>
             <skill>2</skill>
             <luck>2</luck>
@@ -48,7 +48,7 @@
                 <ref value="skill_id_17"/>
                 <ref value="skill_id_19"/>
             </skills>
-            <health>70</health>
+            <health>50</health>
             <defense>2</defense>
             <skill>2</skill>
             <luck>2</luck>
@@ -61,7 +61,7 @@
                 <ref value="skill_id_18"/>
                 <ref value="skill_id_19"/>
             </skills>
-            <health>100</health>
+            <health>70</health>
             <defense>5</defense>
             <skill>5</skill>
             <luck>5</luck>

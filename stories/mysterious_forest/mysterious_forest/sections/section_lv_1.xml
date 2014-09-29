@@ -31,7 +31,8 @@
         </section>
         <section level="1" position="6" text="s6_text" enemiesDefeatedText="s6_ed">
             <bonuses>
-                <bonus type="health" value="20" state="before_fight"/>
+                <bonus type="health" base="true" value="20" state="after_fight"/>
+                <bonus type="health" value="30" debuff="true" state="before_fight"/>
             </bonuses>
             <enemies>
                 <ref value="enemy_id_3"/>
@@ -42,9 +43,18 @@
                 <option section="7" text="default_option_text"/>
             </options>
         </section>
-        <section level="1" position="7"/>
-        <section level="1" position="8"/>
-        <section level="1" position="9"/>
+        <section level="1" position="7" text="s7_text">
+            <options>
+                <option section="8" text="s7_opt2"/>
+                <option section="9" text="s7_opt1"/>
+            </options>
+        </section>
+        <section level="1" position="8" text="s8_text" loseSection="true"/>
+        <section level="1" position="9" text="s9_text">
+            <options>
+                <option section="10" text="default_option_text"/>
+            </options>
+        </section>
         <section level="1" position="10"/>
         <section level="1" position="11"/>
         <section level="1" position="12"/>
