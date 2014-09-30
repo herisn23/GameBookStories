@@ -110,8 +110,12 @@
                 <option section="19" text="s17_opt2"/>
             </options>
         </section>
-        <section level="1" position="18"/>
-        <section level="1" position="19"/>
+        <section level="1" xpcoeff="0.15" position="18" text="s18_text">
+            <options>
+                <option section="20" text="default_option_text"/>
+            </options>
+        </section>
+        <section level="1" position="19" text="s19_text"/>
         <section level="1" position="20"/>
         <section level="1" position="21"/>
         <section level="1" position="22"/>
