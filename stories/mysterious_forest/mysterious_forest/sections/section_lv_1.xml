@@ -104,7 +104,12 @@
         </section>
         <section level="1" position="15" text="s15_text"/>
         <section level="1" position="16" text="s16_text" loseSection="true"/>
-        <section level="1" position="17" text="s17_text"/>
+        <section level="1" position="17" text="s17_text">
+            <options>
+                <option section="18" text="s17_opt1"/>
+                <option section="19" text="s17_opt2"/>
+            </options>
+        </section>
         <section level="1" position="18"/>
         <section level="1" position="19"/>
         <section level="1" position="20"/>
