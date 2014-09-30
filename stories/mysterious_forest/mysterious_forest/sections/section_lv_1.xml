@@ -16,7 +16,12 @@
                 <option section="4" text="default_option_text"/>
             </options>
         </section>
-        <section level="1" position="3"/>
+        <section level="1" position="3" text="s3_text">
+            <options>
+                <option section="17" text="s3_opt2"/>
+                <option section="16" text="s3_opt1"/>
+            </options>
+        </section>
         <section level="1" position="4" text="s4_text">
             <options>
                 <option section="3" text="s4_opt1"/>
@@ -55,14 +60,51 @@
                 <option section="10" text="default_option_text"/>
             </options>
         </section>
-        <section level="1" position="10"/>
-        <section level="1" position="11"/>
-        <section level="1" position="12"/>
-        <section level="1" position="13"/>
-        <section level="1" position="14"/>
-        <section level="1" position="15"/>
-        <section level="1" position="16"/>
-        <section level="1" position="17"/>
+        <section level="1" position="10" text="s10_text">
+            <options>
+                <option section="11" text="s10_opt1"/>
+                <option section="12" text="s10_opt2"/>
+            </options>
+        </section>
+        <section level="1" position="11" text="s11_text">
+            <bonuses>
+                <bonus type="health" value="25"/>
+            </bonuses>
+            <options>
+                <option section="13" text="s11_text"/>
+            </options>
+        </section>
+        <section level="1" position="12" text="s12_text">
+            <bonuses>
+                <bonus type="health" value="25"/>
+            </bonuses>
+            <enemies>
+                <ref value="enemy_id_4" xpcoeff="0.0"/>
+            </enemies>
+            <options>
+                <option section="13" text="default_option_text"/>
+            </options>
+        </section>
+        <section level="1" position="13" text="s13_text">
+            <options>
+                <option section="14" text="s13_opt1"/>
+                <option section="15" text="s13_opt2"/>
+            </options>
+        </section>
+        <section level="1" position="14" text="s14_text">
+            <enemies>
+                <ref value="enemy_id_0"/>
+                <ref value="enemy_id_0"/>
+                <ref value="enemy_id_0"/>
+                <ref value="enemy_id_0"/>
+            </enemies>
+            <options>
+                <option section="15" text="s14_opt1"/>
+            </options>
+        </section>
+        <section level="1" position="15" text="s15_text"/>
+        <section level="1" position="16" text="s16_text" loseSection="true"/>
+        <section level="1" position="17" text="s17_text"/>
         <section level="1" position="18"/>
         <section level="1" position="19"/>
         <section level="1" position="20"/>

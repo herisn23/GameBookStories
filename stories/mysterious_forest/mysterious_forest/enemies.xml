@@ -42,13 +42,13 @@
             <luck>2</luck>
             <attack>2</attack>
         </enemy>
-        <enemy name="goblin_champion" difficulty="2" xpcoeff="1.5" type="minion" id="enemy_id_4">
+        <enemy name="goblin_champion" difficulty="1" xpcoeff="1.5" type="minion" id="enemy_id_4">
             <skills>
                 <ref value="skill_id_16"/>
                 <ref value="skill_id_17"/>
                 <ref value="skill_id_19"/>
             </skills>
-            <health>50</health>
+            <health>35</health>
             <defense>2</defense>
             <skill>2</skill>
             <luck>2</luck>
