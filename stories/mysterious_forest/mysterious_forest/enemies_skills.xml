@@ -26,5 +26,6 @@
         <specialSkill id="skill_id_37" skillName="dark_cleanse" attempts="3" levelRequired="7" proprietarySkill="cancel_hot"/>
         <specialSkill id="skill_id_38" skillName="cleanse_from_forest" attempts="3" levelRequired="10" proprietarySkill="cancel_debuff"/>
         <specialSkill id="skill_id_39" skillName="dark_might" attempts="2" levelRequired="13" coeff="1.8" permanent="true" type="health" proprietarySkill="cancel_buff"/>
+        <specialSkill id="skill_id_40" skillName="amulet_power" attempts="1" turns="4" levelRequired="1" permanent="true" type="health"/>
     </skills>
 </story>

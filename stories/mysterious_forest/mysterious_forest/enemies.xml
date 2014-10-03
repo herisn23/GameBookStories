@@ -302,5 +302,16 @@
             <luck>20</luck>
             <attack>50</attack>
         </enemy>
+        <enemy name="amulet_guard" xpcoeff="0.2" type="boss" id="enemy_id_21">
+            <skills>
+                <ref value="skill_id_40"/>
+            </skills>
+            <skillPower>5</skillPower>
+            <health>40</health>
+            <defense>5</defense>
+            <skill>3</skill>
+            <luck>5</luck>
+            <attack>5</attack>
+        </enemy>
     </enemies>
 </story>

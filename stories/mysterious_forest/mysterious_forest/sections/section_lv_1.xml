@@ -110,14 +110,32 @@
                 <option section="19" text="s17_opt2"/>
             </options>
         </section>
-        <section level="1" xpcoeff="0.15" position="18" text="s18_text">
+        <section level="1" xpcoeff="0.25" position="18" text="s18_text">
             <options>
                 <option section="20" text="default_option_text"/>
             </options>
         </section>
-        <section level="1" position="19" text="s19_text"/>
+        <section level="1" position="19" text="s19_text">
+            <options>
+                <option section="21" text="s19_opt1"/>
+            </options>
+        </section>
         <section level="1" position="20"/>
-        <section level="1" position="21"/>
+        <section level="1" position="21" text="s20_text">
+            <bonuses>
+                <bonus type="luck" base="true" value="1" state="after_fight"/>
+                <bonus type="defense" base="true" value="1" state="after_fight"/>
+                <bonus type="skill" base="true" value="1" state="after_fight"/>
+                <bonus type="attack" base="true" value="1" state="after_fight"/>
+                <bonus type="skillpower" base="true" value="1" state="after_fight"/>
+            </bonuses>
+            <enemies>
+                <ref value="enemy_id_21" xpcoeff="0.2"/>
+            </enemies>
+            <options>
+                <option section="20" text="default_option_text"/>
+            </options>
+        </section>
         <section level="1" position="22"/>
         <section level="1" position="23"/>
         <section level="1" position="24"/>
